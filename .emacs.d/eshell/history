@@ -1,0 +1,51 @@
+ls
+cp DefaultAutofillPicker.java DefaultWorkAutofillPicker.java
+ls
+git commit -a --amend --no-edit
+git commit -a --amend --no-edit
+git rm AutofillPickerController.java 
+source ~/.bashrc
+android_build
+cd $MASTER
+ls
+ls
+cp DeviceAdminAdd.java /usr/local/ssd/android/master/frameworks/base/core/java/android/app/admin/
+cd /usr/local/ssd/android/master/frameworks/base/core/java/android/app/admin/
+ls
+echo >#<buffer>
+adb logcat >#<log1>
+x
+source ~/.bashrc
+ls
+bash ~/.bashrc
+adblog
+adb logcat > #<buffer *log*>
+ls
+adb shell
+adblog
+eshell-read-aliases-list
+adblog 
+adblog and
+clear
+clear
+android-logcat 
+(car '(rose, flower))
+(car '('rose, 'flower))
+(car '('rose 'flower))
+echo hell > #<buffer *scratch>
+echo hell > #<buffer *scratch>
+echo hell > #<buffer *scratch*>
+adb logcat > #<buffer *scratch*>
+adb logcat > #<buffer *logcat*>
+adb logcat
+adb logcat > #<buffer logcat>
+adb logcat > #<buffer logcat1>
+adb logcat > #<buffer logcat>
+printenv
+type tocrosshatch
+type adblog
+while
+which adb
+cd $M
+source build/envsetup.sh 
+ANDROID_SERIAL=CROSS_HATCH_SERIAL

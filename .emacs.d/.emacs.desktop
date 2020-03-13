@@ -1,0 +1,4315 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Wed Feb 26 19:51:11 2020
+;; Desktop file format version 208
+;; Emacs version 26.3
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (24150 52271 632245 28000) (desktop . "208") "zezeozue@zezeozue.lon.corp.google.com" nil nil ((((minibuffer . t) (environment "_=/usr/bin/emacsclient" "_fzf_orig_completion_wc=complete -F %s wc #_longopt" "_fzf_orig_completion_git=complete -o bashdefault -o default -o nospace -F %s git #__git_wrap__git_main" "_fzf_orig_completion_head=complete -F %s head #_longopt" "_fzf_orig_completion_sed=complete -F %s sed #_longopt" "DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-eGCkNec49X,guid=2772d8932c2afddd229f37645e56cad8" "CROSS_HATCH_SERIAL=86WY00E46" "HISTFILESIZE=-1" "GDMSESSION=cinnamon" "PATH=/usr/lib/google-golang/bin:/usr/local/buildtools/java/jdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/google/home/zezeozue/.fzf/bin" "ALTERNATE_EDITOR=" "_fzf_orig_completion_cp=complete -F %s cp #_longopt" "KB=/usr/local/ssd-extra/android/kernel-bluecross/" "XDG_DATA_DIRS=/usr/share/gnome:/usr/local/share/:/usr/share/" "_fzf_orig_completion_less=complete -F %s less #_longopt" "KW=/usr/local/ssd-extra/android/kernel-wahoo/" "_fzf_orig_completion_cd=complete -o nospace -F %s cd #_cd" "KV=/usr/local/ssd-extra/kernel-vanilla/" "PS1=\\t:\\[\\e]0;$(parse_git_branch)\\a\\]\\[\\e[1;35m\\]\\[\\033[32m\\]\\w\\[\\033[33m\\]$(parse_git_branch)\\[\\033[00m\\] $ " "GTAGSLIBPATH=/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google:/usr/local/ssd-extra/android/master/external/libfuse" "XDG_RUNTIME_DIR=/run/user/430560" "DEVICE=taimen" "XDG_SESSION_ID=c3" "_fzf_orig_completion_pushd=complete -o nospace -F %s pushd #_cd" "XDG_VTNR=7" "CVS_RSH=ssh" "AUTO_PROXY=https://proxyconfig.corp.google.com/proxy.pac" "STUDIO_VM_OPTIONS=~/studio64.vmoptions" "KERNEL_BLUECROSS=/usr/local/ssd-extra/android/kernel-bluecross/" "TAIMEN_SERIAL=26cff65" "PARINIT=rTbgqR B=.?_A_a Q=_s>|:" "MASTER=/usr/local/ssd-extra/android/master" "SHLVL=2" "DISPLAY=:0" "ANDROID_SDK_EXPERIMENTAL=--android_sdk=//third_party/java/android/android_sdk_linux/platforms/experimental:android_sdk_tools" "VISUAL=emacsclient -t" "CHROME_REMOTE_DESKTOP_DEFAULT_DESKTOP_SIZES=1600x1200,3840x2560" "GNOME_TERMINAL_SERVICE=:1.61" "_fzf_orig_completion_ls=complete -F %s ls #_longopt" "TMUX_PANE=%1" "_fzf_orig_completion_ld=complete -F %s ld #_longopt" "USER=zezeozue" "SK_SIGNING_PLUGIN=gnubbyagent" "_fzf_orig_completion_ln=complete -F %s ln #_longopt" "LESSOPEN=| /usr/bin/lesspipe %s" "GTK_OVERLAY_SCROLLING=0" "TERM=tmux-256color" "PYTHONPATH=/usr/local/buildtools/current/sitecustomize" "_fzf_orig_completion_cat=complete -F %s cat #_longopt" "XDG_SESSION_CLASS=user" "LESSCLOSE=/usr/bin/lesspipe %s %s" "GJS_DEBUG_OUTPUT=stderr" "_fzf_orig_completion_sort=complete -F %s sort #_longopt" "_fzf_orig_completion_du=complete -F %s du #_longopt" "CLUTTER_IM_MODULE=xim" "BR_DIR=/bugreports" "LEFT_OFFSET=0" "GS=/gitc/manifest-rw/" "GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/869efc96_43a6_4434_bd76_0b231426ddbe" "XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0" "PROMPT_COMMAND=\n    test $(stat -c %Y ~/.bashrc) -ne $bashrc_sourced && source ~/.bashrc\n" "GO=/usr/local/ssd-extra/android/gitc" "_fzf_orig_completion_grep=complete -F %s grep #_longopt" "KERNEL_VANILLA=/usr/local/ssd-extra/kernel-vanilla/" "GITC_OUT=/usr/local/ssd-extra/android/gitc" "VTE_VERSION=5802" "AOSP=/usr/local/ssd-extra/android/aosp" "_fzf_orig_completion_telnet=complete -F %s telnet #_known_hosts" "XDG_CURRENT_DESKTOP=X-Cinnamon" "LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:" "_fzf_orig_completion_awk=complete -F %s awk #_longopt" "LANG=en_US.UTF-8" "ADB_VENDOR_KEYS=/usr/local/ssd-extra/android/qt-dev/vendor/google/security/adb/10.adb_key:/usr/local/ssd-extra/android/qt-dev/vendor/google/security/adb/11.adb_key:/usr/local/ssd-extra/android/qt-dev/vendor/google/security/adb/7.0.adb_key:/usr/local/ssd-extra/android/qt-dev/vendor/google/security/adb/7.1.1.adb_key:/usr/local/ssd-extra/android/qt-dev/vendor/google/security/adb/7.1.2.adb_key:/usr/local/ssd-extra/android/qt-dev/vendor/google/security/adb/7.1.adb_key:/usr/local/ssd-extra/android/qt-dev/vendor/google/security/adb/8.0.0.adb_key:/usr/local/ssd-extra/android/qt-dev/vendor/google/security/adb/8.0.1.adb_key:/usr/local/ssd-extra/android/qt-dev/vendor/google/security/adb/8.1.0.adb_key:/usr/local/ssd-extra/android/qt-dev/vendor/google/security/adb/9.adb_key:/usr/local/ssd-extra/android/qt-dev/vendor/google/security/adb/Q.adb_key:/usr/local/ssd-extra/android/qt-dev/vendor/google/security/adb/R.adb_key" "HOME=/usr/local/google/home/zezeozue" "_fzf_orig_completion_diff=complete -F %s diff #_longopt" "GDM_LANG=en_US.utf8" "GJS_DEBUG_TOPICS=JS ERROR;JS LOG" "P4MERGE=/google/src/files/head/depot/eng/perforce/mergep4.tcl" "A=/usr/local/ssd-extra/android/aosp" "P4EDITOR=/usr/bin/emacs --geometry=150x50" "XDG_GREETER_DATA_DIR=/var/lib/lightdm/data/zezeozue" "M=/usr/local/ssd-extra/android/master" "Q=/usr/local/ssd-extra/android/qt-dev" "S=/usr/local/google/home/zezeozue/scratch" "XAUTHORITY=/usr/local/google/home/zezeozue/.Xauthority" "GPG_AGENT_INFO=/run/user/430560/gnupg/S.gpg-agent:0:1" "GOMA_DIR=/usr/local/google/home/zezeozue/goma" "XDG_SESSION_TYPE=x11" "LOGNAME=zezeozue" "XDG_SESSION_DESKTOP=cinnamon" "RSYNC_RSH=ssh" "PWD=/usr/local/google/home/zezeozue" "_fzf_orig_completion_mv=complete -F %s mv #_longopt" "XDG_SEAT=seat0" "GTK_MODULES=gail:atk-bridge" "EMULATOR_SERIAL=127.0.0.1:6520" "EDITOR=emacsclient -t" "STORAGE_TEST=/usr/local/google/home/zezeozue/AndroidStudioProjects/StorageTestApp/google3/experimental/users/zezeozue/StorageTestApp" "X20_HOME=/google/data/rw/users/ze/zezeozue" "SSH_AGENT_PID=16799" "DESKTOP_SESSION=cinnamon" "XMODIFIERS=@im=none" "GITC_SRC=/gitc/manifest-rw/" "TMUX_PLUGIN_MANAGER_PATH=/usr/local/google/home/zezeozue/.tmux/plugins/" "_fzf_orig_completion_tail=complete -F %s tail #_longopt" "CINNAMON_VERSION=4.2.4" "KERNEL_WAHOO=/usr/local/ssd-extra/android/kernel-wahoo/" "SSH_AUTH_SOCK=/usr/local/google/home/zezeozue/.tmp/.zezeozue.ssh_auth_sock" "P4CONFIG=.p4config" "_fzf_orig_completion_ftp=complete -F %s ftp #_known_hosts" "QT4_IM_MODULE=xim" "_fzf_orig_completion_uniq=complete -F %s uniq #_longopt" "LANGUAGE=en_US:" "HISTSIZE=-1" "TMUX=/tmp/tmux-430560/default,35520,0" "ANDROID_SDK_STABLE=--android_sdk=//third_party/java/android/android_sdk_linux/platforms/stable:android_sdk_tools" "GTK_IM_MODULE=xim" "GNOME_DESKTOP_SESSION_ID=this-is-deprecated" "HISTCONTROL=ignoredups:erasedups" "XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0" "_fzf_orig_completion_rmdir=complete -F %s rmdir #_longopt" "_fzf_orig_completion_rm=complete -F %s rm #_longopt" "_fzf_orig_completion_tee=complete -F %s tee #_longopt" "COLORTERM=truecolor" "QT_ACCESSIBILITY=1" "SESSION_MANAGER=local/zezeozue.lon.corp.google.com:@/tmp/.ICE-unix/16685,unix/zezeozue.lon.corp.google.com:/tmp/.ICE-unix/16685" "SHELL=/bin/bash") (tty-type . "tmux-256color") (tty . "/dev/pts/2") (display-type . color) (background-mode . dark) (foreground-color . "#F5F5F5") (background-color . "#1B1E1C") (cursor-color . "#F5F5F5") (mouse-color . "#F5F5F5") (display . ":0") (frameset--id . "C8B3-9F9F-5049-E08A") (frameset--mini t) (font . "tty") (height . 112) (width . 212) (modeline . t) (unsplittable) (menu-bar-lines . 0)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 5) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 4) (min-pixel-width . 10) (min-pixel-height-ignore . 2) (min-pixel-width-ignore . 5) (min-pixel-height-safe . 1) (min-pixel-width-safe . 2)) leaf (pixel-width . 212) (pixel-height . 111) (total-width . 212) (total-height . 111) (normal-height . 1.0) (normal-width . 1.0) (buffer "MediaProviderWrapper.cpp<master>" (selected . t) (hscroll . 0) (fringes 0 0 nil) (margins 3) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 14507) (start . 12641))) (((minibuffer . t) (foreground-color . "unspecified-fg") (menu-bar-lines . 0) (tool-bar-lines . 0) (background-color . "unspecified-bg") (display-type . mono) (background-mode . dark) (cursor-color . "white") (font . "tty") (height . 11) (width . 10) (modeline . t) (unsplittable) (frameset--id . "187D-A5A4-F9D8-C593") (frameset--mini t)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 4) (min-pixel-width . 10) (min-pixel-height-ignore . 2) (min-pixel-width-ignore . 4) (min-pixel-height-safe . 1) (min-pixel-width-safe . 2)) leaf (pixel-width . 10) (pixel-height . 10) (total-width . 10) (total-height . 10) (normal-height . 1.0) (normal-width . 1.0) (buffer ".tmux.conf" (selected) (hscroll . 0) (fringes 0 0 nil) (margins 2) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 1679) (start . 1))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring '("meminfo" "credst"))
+(setq register-alist (list (list :fzf-windows "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook `(lambda nil (set-marker ,mk ,61 (get-buffer ,"ExternalStorageHostTest.java")))) mk))))
+(setq file-name-history '("/usr/local/google/home/zezeozue/.tmux.conf" "/usr/local/google/home/zezeozue/.globalrc" "/usr/local/ssd-extra/android/rvc-dev/packages/providers/MediaProvider/jni/MediaProviderWrapper.cpp" "/usr/local/ssd-extra/android/rvc-dev/packages/providers/MediaProvider/jni/FuseDaemon.cpp" "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/jni/Android.bp" "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/TEST_MAPPING" "/usr/local/google/home/zezeozue/Downloads/lc1.txt" "/usr/local/google/home/zezeozue/lc" "/usr/local/google/home/zezeozue/AndroidStudioProjects/StorageTestAppTemp/app/src/main/AndroidManifest.xml" "/usr/local/google/home/zezeozue/AndroidStudioProjects/StorageTestAppTemp/app/build.gradle" "/usr/local/google/home/zezeozue/AndroidStudioProjects/StorageTestAppTemp/app/src/main/AndroidManifest.xml" "/usr/local/google/home/zezeozue/Downloads/logcat-GeneralSettingsTest-testGeneralSettingsPage.txt" "/usr/local/ssd-extra/android/master/frameworks/base/Android.bp" "/usr/local/ssd-extra/android/master/frameworks/base/services/core/java/com/android/server/policy/PermissionPolicyService.java" "/usr/local/google/home/zezeozue/Downloads/fsstress-run.sh" "/usr/local/google/home/zezeozue/Downloads/logcat-DialtoneTest-aaaTestSampleBackgroundTasksAllAtOnce.txt" "/usr/local/google/home/zezeozue/scratch/log.txt" "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/tests/jni/" "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/" "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/jni/FuseDaemon.h" "/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/fs/fuse/" "/usr/local/ssd-extra/android/master/packages/apps/DocumentsUI/tests/" "/usr/local/ssd-extra/android/master/packages/apps/DocumentsUI/src/com/android/documentsui/services/CopyJob.java" "/usr/local/ssd-extra/android/aosp/system/core/rootdir/init.rc" "/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/fs/ext4/" "/usr/local/ssd-extra/android/master/system/core/rootdir/init.rc" "/usr/local/ssd-extra/android/master/cts/tests/tests/permission2/Android.bp" "/usr/local/ssd-extra/android/master/cts/tests/tests/permission2/CtsLocationPermissionsUserSdk22/" "/usr/local/ssd-extra/android/master/cts/tests/tests/permission2/CtsStoragePermissionsUserDefaultSdk28/" "/usr/local/ssd-extra/android/master/cts/tests/tests/permission2/CtsStoragePermissionsUserDefaultSdk29/" "/usr/local/ssd-extra/android/master/cts/tests/tests/permission2/" "/usr/local/ssd-extra/android/master/cts/tests/tests/permission2/src/android/permission2/" "/usr/local/ssd-extra/android/master/cts/tests/tests/permission2/CtsStoragePermissionsUserOptOutSdk29/" "/usr/local/ssd-extra/android/master/cts/tests/tests/permission2/AndroidTest.xml" "/usr/local/ssd-extra/android/master/cts/tests/tests/permission2/CtsStoragePermissionsPreservedUserOptInSdk30/Android.bp" "/usr/local/ssd-extra/android/master/cts/tests/tests/permission2/CtsStoragePermissionsUserPreservedOptOutSdk30/AndroidManifest.xml" "/usr/local/ssd-extra/android/master/cts/tests/tests/permission2/CtsStoragePermissionsUserPreservedOptOutSdk30" "/usr/local/google/home/zezeozue/cuttlefish_runtime.1/logcat" "/usr/local/ssd-extra/android/master/cts/tests/tests/permission2/CtsStoragePermissionsUserPreservedOptOut30/AndroidManifest.xml" "/usr/local/ssd-extra/android/master/cts/tests/tests/permission2/CtsStoragePermissionsUserDefaultSdk30/AndroidManifest.xml" "/usr/local/google/home/zezeozue/.gdbinit" "/usr/local/ssd-extra/android/master/external/e2fsprogs/contrib/Android.bp" "/usr/local/google/home/zezeozue/scratch/bugreport-crosshatch-MASTER-2020-02-08-14-18-04.zip" "/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/fs/fuse/inode.c" "/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/fs/fuse/file.c" "/usr/local/ssd-extra/android/master/external/libfuse/lib/fuse_loop_mt.c" "/usr/local/ssd-extra/android/master/external/libfuse/lib/helper.c" "/usr/local/ssd-extra/android/master/external/libfuse/lib/buffer.c" "/usr/local/ssd-extra/android/master/external/libfuse/lib/fuse_lowlevel.c" "/usr/local/google/home/zezeozue/scratch/heap_info.txt" "/usr/local/ssd-extra/android/master/cts/hostsidetests/appsecurity/test-apps/ReadExternalStorageApp/AndroidManifest.xml" "/usr/local/ssd-extra/android/master/cts/hostsidetests/appsecurity/test-apps/ReadExternalStorageApp/Android.bp" "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/jni/FuseDaemon.cpp" "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/deploy.sh" "/usr/local/google/home/zezeozue/Downloads/bugreport-flame-RP1A.200115.001.C1-2020-01-22-12-07-31-tmp_REDACTED.zip" "/usr/local/ssd-extra/android/master/vendor/google_experimental/users/shafik/StorageTestApp/AndroidManifest.xml" "/usr/local/ssd-extra/android/master/vendor/google_experimental/users/shafik/StorageTestApp/src/main/java/com/query/MainActivity.java" "/usr/local/ssd-extra/android/master/frameworks/base/services/core/java/com/android/server/pm/Settings.java" "/usr/local/ssd-extra/android/master/vendor/google_experimental/users/shafik/StorageTestApp/src/main/java/com/query/MainActivity.java" "/usr/local/ssd-extra/android/master/vendor/google_experimental/users/shafik/StorageTestApp/src/main/java/com/query/MainActivity.java" "/usr/local/ssd-extra/android/master/vendor/google_experimental/users/shafik/StorageTestApp/src/main/java/com/query/MainActivity.java" "/usr/local/ssd-extra/android/master/vendor/google_experimental/users/shafik/StorageTestApp/src/main/java/com/query/MainActivity.java" "/usr/local/ssd-extra/android/master/vendor/google_experimental/users/shafik/StorageTestApp/src/main/java/com/query/MainActivity.java" "/usr/local/ssd-extra/android/master/vendor/google_experimental/users/shafik/StorageTestApp/src/main/java/com/query/MainActivity.java" "/usr/local/ssd-extra/android/master/vendor/google_experimental/users/shafik/StorageTestApp/Android.bp" "/usr/local/ssd-extra/android/master/vendor/google_experimental/users/shafik/StorageTestApp/src/main/java/com/query/MainActivity.java" "/usr/local/ssd-extra/android/master/src/main/java/com/query/MainActivity.java" "/usr/local/google/home/zezeozue/AndroidStudioProjects/StorageTestApp/google3/experimental/users/zezeozue/StorageTestApp/app/src/main/AndroidManifest.xml" "/usr/local/ssd-extra/android/master/vendor/google_experimental/users/shafik/StorageTestApp/src/main/java/com/query/MainActivity.java" "/usr/local/google/home/zezeozue/AndroidStudioProjects/StorageTestAppTemp/app/src/main/AndroidManifest.xml" "/usr/local/ssd-extra/android/master/system/vold/model/Disk.h" "/usr/local/ssd-extra/android/master/system/vold/model/StubVolume.cpp" "/usr/local/ssd-extra/android/master/frameworks/base/core/res/res/values/attrs_manifest.xml" "/usr/local/ssd-extra/android/master/frameworks/base/core/res/res/values/symbols.xml" "/usr/local/ssd-extra/android/master/frameworks/base/core/res/res/values/config.xml" "/usr/local/ssd-extra/android/master/frameworks/base/core/res/res/values/public.xml" "/usr/local/ssd-extra/android/master/frameworks/base/core/res/res/values/attrs.xml" "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/deploy.sh" "/usr/local/ssd-extra/android/master/external/libfuse/lib/fuse_loop.c" "/usr/local/ssd-extra/android/master/external/libfuse/" "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/jni/node-inl.h" "/usr/local/ssd-extra/android/master/frameworks/base/core/" "/usr/local/ssd-extra/android/master/frameworks/base/" "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/jni/com_android_providers_media_FuseDaemon.cpp" "/usr/local/google/home/zezeozue/scratch/l5.txt" "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/deploy.sh" "/usr/local/ssd-extra/android/master/system/vold/model/VolumeBase.h" "/usr/local/ssd-extra/android/master/system/vold/model/VolumeBase.cpp" "/usr/local/ssd-extra/android/master/tools/tradefederation/core/util-apps/ContentProvider/main/AndroidManifest.xml" "/usr/local/ssd-extra/android/master/tools/tradefederation/core/util-apps/ContentProvider/main/Android.bp" "/usr/local/ssd-extra/android/master/tools/tradefederation/core/util-apps/ContentProvider/main/java/android/tradefed/contentprovider/ManagedFileContentProvider.java" "/usr/local/ssd-extra/android/master/libcore/metrictests/memory/host/src/libcore/heapmetrics/MetricsRunner.java" "/usr/local/ssd-extra/android/master/libcore/metrictests/memory/host/AndroidTest.xml" "/usr/local/ssd-extra/android/master/libcore/AndroidTest-core-tests.xml" "/usr/local/ssd-extra/android/master/libcore/metrictests/memory/apps/src/" "/usr/local/google/home/zezeozue/scratch/dummyfiles.sh" "/usr/local/ssd-extra/android/master/frameworks/base/services/core/java/com/android/server/StorageManagerService.java" "/usr/local/google/home/zezeozue/scratch/log1.txt" "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/deploy.sh" "/usr/local/ssd-extra/android/aosp/system/sepolicy/private/bug_map"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/jni/MediaProviderWrapper.cpp"
+  "MediaProviderWrapper.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  14507
+  '(1383 nil)
+  nil
+  nil
+  '((buffer-display-time 24150 52241 385751 421000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1383 1383 1383 1383 1383 1383 1383 1383 1379 621 1280))))
+
+(desktop-create-buffer 208
+  "/usr/local/google/home/zezeozue/.tmux.conf"
+  ".tmux.conf"
+  'conf-space-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  1679
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24150 52154 674729 745000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/usr/local/google/home/zezeozue/.globalrc"
+  ".globalrc"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  1
+  '(6986 nil)
+  nil
+  nil
+  '((buffer-display-time 24150 51545 763466 823000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/usr/local/google/home/zezeozue/.bashrc"
+  ".bashrc"
+  'sh-mode
+  '(global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode which-key-mode)
+  1
+  '(20214 nil)
+  nil
+  nil
+  '((buffer-display-time 24150 51528 161105 632000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (15867 15730 13926 13190 12800 14684 14622 435 10710 10672))))
+
+(desktop-create-buffer 208
+  "/usr/local/google/home/zezeozue/.emacs.d/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(eldoc-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode which-key-mode)
+  71
+  '(23440 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . trailing-whitespace) (indicate-empty-lines . t) (indent-tabs-mode) (buffer-display-time 24150 51501 732683 13000) (buffer-file-coding-system . prefer-utf-8-unix))
+  '((mark-ring (9667 10209 10036 10543 10370 10927 10722 10207 10035 10034 9875 9873))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/rvc-dev/packages/providers/MediaProvider/jni/MediaProviderWrapper.cpp"
+  "MediaProviderWrapper.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  17605
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24150 51359 565992 889000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/rvc-dev/packages/providers/MediaProvider/jni/FuseDaemon.cpp"
+  "FuseDaemon.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  48184
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24149 59957 976264 189000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/jni/node.cpp"
+  "node.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1853
+  '(2335 nil)
+  nil
+  nil
+  '((buffer-display-time 24149 46956 832622 750000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2335 1523 3029))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/jni/FuseDaemon.cpp"
+  "FuseDaemon.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  2033
+  '(2017 nil)
+  nil
+  nil
+  '((buffer-display-time 24149 9377 261205 74000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2017 2017 2017 2017 2017 2017 2017 2017 2017 51305 2017 1963 1694 712))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/jni/Android.bp"
+  "Android.bp"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  1518
+  '(1285 nil)
+  nil
+  nil
+  '((buffer-display-time 24145 3183 405494 326000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1285 1489 621 1465 1488 1889 1490 881 881 881 881))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/TEST_MAPPING"
+  "TEST_MAPPING"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  619
+  '(618 nil)
+  nil
+  nil
+  '((buffer-display-time 24144 48051 814090 658000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (618 495))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/jni/node-inl.h"
+  "node-inl.h"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  11399
+  '(12534 nil)
+  nil
+  nil
+  '((buffer-display-time 24144 46930 916157 267000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (796 697 796 796 785 796 796 832 796 796 796 796 796 796 796 796))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/jni/node_test.cpp"
+  "node_test.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  5194
+  '(213 nil)
+  nil
+  nil
+  '((buffer-display-time 24144 46924 46945 51000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (213 213 213 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/com/android/internal/os/Zygote.java"
+  "Zygote.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  23466
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24143 48416 795868 963000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/jni/com_android_internal_os_Zygote.cpp"
+  "com_android_internal_os_Zygote.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  90632
+  '(1442 nil)
+  nil
+  nil
+  '((buffer-display-time 24143 48353 558747 741000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1442 1442 1442 1442 1442 92920 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/external/libfuse/include/fuse_lowlevel.h"
+  "fuse_lowlevel.h"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  3066
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24143 47431 537397 936000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/external/libfuse/lib/fuse_lowlevel.c"
+  "fuse_lowlevel.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  59513
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24143 47334 46215 974000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/external/libfuse/lib/fuse_i.h"
+  "fuse_i.h"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1068
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24143 47318 384055 152000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/src/com/android/providers/media/util/PermissionUtils.java"
+  "PermissionUtils.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  6209
+  '(868 nil)
+  nil
+  nil
+  '((buffer-display-time 24143 47158 713323 609000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (868 868 868 9752 9736 9577 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/src/com/android/providers/media/LocalCallingIdentity.java"
+  "LocalCallingIdentity.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  14241
+  '(2076 nil)
+  nil
+  nil
+  '((buffer-display-time 24143 46926 899400 888000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2076 2076 2076 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/services/core/java/com/android/server/pm/PackageManagerService.java"
+  "PackageManagerService.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  277013
+  '(7216 nil)
+  nil
+  nil
+  '((buffer-display-time 24143 45564 546990 574000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (6310 7216 7216 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/tests/jni/FuseDaemonTest/libs/FuseDaemonTestLib/src/com/android/tests/fused/lib/TestUtils.java"
+  "TestUtils.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  16329
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24143 45131 269717 100000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/src/com/android/providers/media/MediaProvider.java"
+  "MediaProvider.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  288648
+  '(288155 nil)
+  nil
+  nil
+  '((buffer-display-time 24143 44988 419871 494000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (4601 4238 288239 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/src/com/android/providers/media/util/FileUtils.java"
+  "FileUtils.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  19908
+  '(16885 nil)
+  nil
+  nil
+  '((buffer-display-time 24143 44844 707329 100000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (20133 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/src/com/android/providers/media/DatabaseHelper.java"
+  "DatabaseHelper.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  37259
+  '(11174 nil)
+  nil
+  nil
+  '((buffer-display-time 24143 44786 363111 858000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (11174 11174 11174 11174 11174 11174 11174 12690 11174 11174 11174 11174 11174 11174 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/google/home/zezeozue/lc"
+  "lc"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  326
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24143 44435 45247 169000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/tests/jni/FuseDaemonTest/legacy/src/com/android/tests/fused/legacy/LegacyFileAccessTest.java"
+  "LegacyFileAccessTest.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  18298
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24143 43598 9702 277000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/tests/jni/FuseDaemonTest/src/com/android/tests/fused/FilePathAccessTest.java"
+  "FilePathAccessTest.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  6672
+  '(2259 nil)
+  nil
+  nil
+  '((buffer-display-time 24143 42934 568665 845000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2259 2259 1317 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/tests/jni/FuseDaemonTest/host/src/com/android/tests/fused/host/FuseDaemonHostTest.java"
+  "FuseDaemonHostTest.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24143 42915 167964 395000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/android/app/AppOpsManager.java"
+  "AppOpsManager.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  53918
+  '(651 nil)
+  nil
+  nil
+  '((buffer-display-time 24143 41458 823009 453000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/usr/local/google/home/zezeozue/AndroidStudioProjects/StorageTestAppTemp/app/src/main/AndroidManifest.xml"
+  "AndroidManifest.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  305
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24143 40390 548881 78000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/google/home/zezeozue/AndroidStudioProjects/StorageTestAppTemp/app/build.gradle"
+  "build.gradle"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  214
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24143 40339 437980 491000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/jni/MediaProviderWrapper.h"
+  "MediaProviderWrapper.h"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  5539
+  '(1055 nil)
+  nil
+  nil
+  '((buffer-display-time 24143 23657 75539 209000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1055 1055 1055 1055 1055 1055 1055 1055 1055 1055 1055 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/Android.bp"
+  "Android.bp"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  11170
+  '(7969 nil)
+  nil
+  nil
+  '((buffer-display-time 24143 21568 42615 483000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/jni/com_android_providers_media_FuseDaemon.cpp"
+  "com_android_providers_media_FuseDaemon.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  3569
+  '(774 nil)
+  nil
+  nil
+  '((buffer-display-time 24143 20631 244482 517000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (774 774 774 774 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/vold/Utils.cpp"
+  "Utils.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  43510
+  '(1035 nil)
+  nil
+  nil
+  '((buffer-display-time 24143 17222 517905 240000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (4 1035 1035 1035 1035 1035 128 1035 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/src/com/android/providers/media/util/SQLiteQueryBuilder.java"
+  "SQLiteQueryBuilder.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  33113
+  '(16758 nil)
+  nil
+  nil
+  '((buffer-display-time 24143 12275 578853 399000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/services/core/java/com/android/server/policy/PermissionPolicyService.java"
+  "PermissionPolicyService.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  28913
+  '(1339 nil)
+  nil
+  nil
+  '((buffer-display-time 24142 58926 400810 747000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/usr/local/google/home/zezeozue/Downloads/fsstress-run.sh"
+  "fsstress-run.sh"
+  'sh-mode
+  '(global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode which-key-mode)
+  19
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24142 6708 287964 712000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/services/core/java/com/android/server/policy/SoftRestrictedPermissionPolicy.java"
+  "SoftRestrictedPermissionPolicy.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  6006
+  '(1396 nil)
+  nil
+  nil
+  '((buffer-display-time 24142 1 890185 831000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1396 1396 1396 1396 1396 1396 811 1 789))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/external/e2fsprogs/Android.bp"
+  "Android.bp"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  188
+  '(132 nil)
+  nil
+  nil
+  '((buffer-display-time 24141 65510 400807 539000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (602 495))))
+
+(desktop-create-buffer 208
+  nil
+  "e2fsprogs"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  509
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/external/e2fsprogs/")
+  '((buffer-display-time 24141 63606 653754 789000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/services/core/java/com/android/server/StorageManagerService.java"
+  "StorageManagerService.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  176928
+  '(176763 nil)
+  nil
+  nil
+  '((buffer-display-time 24141 62451 290104 661000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1459 1411))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/vold/VolumeManager.cpp"
+  "VolumeManager.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  25179
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24141 62211 47079 82000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/vold/VoldNativeService.cpp"
+  "VoldNativeService.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  14484
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24141 57885 545151 450000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/apex/framework/java/android/provider/MediaStore.java"
+  "MediaStore.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  152008
+  '(68767 nil)
+  nil
+  nil
+  '((buffer-display-time 24141 53235 690283 754000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/android/os/UserHandle.java"
+  "UserHandle.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  16093
+  '(11403 nil)
+  nil
+  nil
+  '((buffer-display-time 24141 53086 763680 335000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (11403 10099 8575 8054 15829 14986 3950 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/src/com/android/providers/media/MediaService.java"
+  "MediaService.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  5288
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24141 52873 219594 768000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/src/com/android/providers/media/util/Logging.java"
+  "Logging.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1503
+  '(1182 nil)
+  nil
+  nil
+  '((buffer-display-time 24141 52013 79869 533000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1155 1182 1182 1182 1182 1182 4551 1182 1182 912 990 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/android/os/storage/StorageManager.java"
+  "StorageManager.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  45524
+  '(1482 nil)
+  nil
+  nil
+  '((buffer-display-time 24141 51170 893425 559000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1482 1482 1482 1482 1482 1482 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/android/os/FileUtils.java"
+  "FileUtils.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  30912
+  '(31362 nil)
+  nil
+  nil
+  '((buffer-display-time 24141 50131 133172 538000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/usr/local/google/home/zezeozue/scratch/log1.txt"
+  "log1.txt"
+  'text-mode
+  '(global-auto-revert-mode company-mode ivy-mode helm-mode which-key-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24141 48838 507365 305000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/include/uapi/asm-generic/posix_types.h"
+  "posix_types.h"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  103
+  '(1006 nil)
+  nil
+  nil
+  '((buffer-display-time 24141 40485 693687 698000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/include/linux/types.h"
+  "types.h"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  734
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24141 38532 853266 296000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/bionic/libc/versioner-dependencies/common/kernel_uapi/asm-generic/posix_types.h"
+  "posix_types.h"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1715
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24141 38518 99264 529000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/bionic/libc/include/sys/types.h"
+  "types.h"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1714
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24141 38490 17228 520000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/external/libfuse/include/fuse_kernel.h"
+  "fuse_kernel.h"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  17968
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24141 10129 609456 420000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "jni"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  303
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/tests/jni/")
+  '((buffer-display-time 24141 7602 651120 937000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/src/com/android/providers/media/fuse/FuseDaemon.java"
+  "FuseDaemon.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  3480
+  '(931 nil)
+  nil
+  nil
+  '((buffer-display-time 24141 6756 719942 231000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (3484 3484 3484 3480 3029 3484 3484 3484 61 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/src/com/android/providers/media/fuse/ExternalStorageServiceImpl.java"
+  "ExternalStorageServiceImpl.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1743
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24141 5223 814265 414000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "MediaProvider"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  300
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/")
+  '((buffer-display-time 24141 5028 394306 273000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/android/service/storage/ExternalStorageService.java"
+  "ExternalStorageService.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  6221
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24141 5002 121215 864000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/jni/FuseDaemon.h"
+  "FuseDaemon.h"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1565
+  '(1565 nil)
+  nil
+  nil
+  '((buffer-display-time 24141 4129 343271 357000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1542 1247 1105 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/libcore/ojluni/src/main/java/java/io/RandomAccessFile.java"
+  "RandomAccessFile.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24140 51067 686486 867000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "libcore"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  277
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/libcore/")
+  '((buffer-display-time 24140 50957 412403 831000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "master"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1681
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/")
+  '((buffer-display-time 24140 50954 488535 41000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/android/os/Environment.java"
+  "Environment.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  36648
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24140 48774 869719 600000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/android/app/ContextImpl.java"
+  "ContextImpl.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  26960
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24140 33519 989446 832000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/fs/fuse/dev.c"
+  "dev.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  42662
+  '(53237 nil)
+  nil
+  nil
+  '((buffer-display-time 24140 33501 15166 229000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (11244 11723 11726 11369 1))))
+
+(desktop-create-buffer 208
+  nil
+  "fuse"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  892
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/fs/fuse/")
+  '((buffer-display-time 24140 31562 608034 966000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "fs"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  4471
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/fs/")
+  '((buffer-display-time 24140 31480 483569 514000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "msm-google"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1994
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/")
+  '((buffer-display-time 24140 31468 289271 670000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/external/libfuse/Android.bp"
+  "Android.bp"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  455
+  '(455 nil)
+  nil
+  nil
+  '((buffer-display-time 24140 27655 102737 101000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (455))))
+
+(desktop-create-buffer 208
+  nil
+  "libfuse"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  289
+  '(1471 nil)
+  t
+  '("/usr/local/ssd-extra/android/master/external/libfuse/")
+  '((buffer-display-time 24140 25425 376226 567000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/vold/model/EmulatedVolume.cpp"
+  "EmulatedVolume.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  9042
+  '(1503 nil)
+  nil
+  nil
+  '((buffer-display-time 24140 19311 823886 670000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1503 1503 1503 1503 1503 1503 1503 1503 1503 1503 1503 1503 1503 1503 1503 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/core/rootdir/init.rc"
+  "init.rc"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  32705
+  '(4474 nil)
+  nil
+  nil
+  '((buffer-display-time 24140 18325 204800 347000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (4474 4474 4474 1131))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/apps/DocumentsUI/src/com/android/documentsui/services/CopyJob.java"
+  "CopyJob.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  24469
+  '(61 nil)
+  nil
+  nil
+  '((buffer-display-time 24134 10113 483473 922000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/apps/DocumentsUI/tests/unit/com/android/documentsui/services/CopyJobTest.java"
+  "CopyJobTest.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  2202
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24133 60986 120319 932000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "tests"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  291
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/packages/apps/DocumentsUI/tests/")
+  '((buffer-display-time 24133 56901 718720 48000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/native/libs/vr/libpdx_uds/private/uds/service_endpoint.h"
+  "service_endpoint.h"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  717
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24133 4276 423019 472000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/tests/tests/permission2/src/android/permission2/cts/RestrictedStoragePermissionTest.java"
+  "RestrictedStoragePermissionTest.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  16593
+  '(2887 nil)
+  nil
+  nil
+  '((buffer-display-time 24132 48504 831513 448000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2855 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/tests/tests/permission2/src/android/permission2/cts/RestrictedPermissionsTest.java"
+  "RestrictedPermissionsTest.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  10379
+  '(3365 nil)
+  nil
+  nil
+  '((buffer-display-time 24132 41547 732520 189000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (3365 3365 29186 29142))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/core/libcutils/fs.cpp"
+  "fs.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  2349
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24132 31437 623328 962000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/res/res/values/attrs_manifest.xml"
+  "attrs_manifest.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  105720
+  '(105511 nil)
+  nil
+  nil
+  '((buffer-display-time 24132 30753 696430 861000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (105511 105511 105511 105037 105481 105471))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/res/res/values/attrs.xml"
+  "attrs.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  1
+  '(27396 nil)
+  nil
+  nil
+  '((buffer-display-time 24132 20014 215112 192000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/android/content/pm/ApplicationInfo.java"
+  "ApplicationInfo.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  28241
+  '(26870 nil)
+  nil
+  nil
+  '((buffer-display-time 24131 50813 475394 995000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1975 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/bionic/libc/bionic/realpath.cpp"
+  "realpath.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  2050
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24131 43553 934191 487000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/libcore/ojluni/src/main/native/canonicalize_md.c"
+  "canonicalize_md.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  6506
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24131 30318 222707 679000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/libcore/ojluni/src/main/native/UnixFileSystem_md.c"
+  "UnixFileSystem_md.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  3024
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24131 30288 836003 235000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/android/util/FeatureFlagUtils.java"
+  "FeatureFlagUtils.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1337
+  '(1019 nil)
+  nil
+  nil
+  '((buffer-display-time 24131 28091 200935 966000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1669 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/fs/ext4/xattr.c"
+  "xattr.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  34014
+  '(34007 nil)
+  nil
+  nil
+  '((buffer-display-time 24131 27038 501437 320000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/aosp/system/core/rootdir/init.rc"
+  "init.rc"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  29856
+  '(29792 nil)
+  nil
+  nil
+  '((buffer-display-time 24131 26470 568302 89000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (6349))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/fs/ext4/xattr_security.c"
+  "xattr_security.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1273
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24131 26225 931746 311000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "ext4"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  367
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/fs/ext4/")
+  '((buffer-display-time 24131 26203 602775 573000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/fs/xattr.c"
+  "xattr.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  16810
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24131 26199 809499 971000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/include/linux/xattr.h"
+  "xattr.h"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  708
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24131 26193 975926 933000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/fs/ext4/file.c"
+  "file.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  19318
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24131 26141 492892 591000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/packages/ExternalStorageProvider/src/com/android/externalstorage/ExternalStorageProvider.java"
+  "ExternalStorageProvider.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  25974
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24131 12925 859643 215000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/fs/sdcardfs/packagelist.c"
+  "packagelist.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  2670
+  '(21369 nil)
+  nil
+  nil
+  '((buffer-display-time 24131 12903 530352 135000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  nil
+  "sdcardfs"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  973
+  '(964 nil)
+  t
+  '("/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/fs/sdcardfs/")
+  '((buffer-display-time 24131 12788 297836 158000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/services/core/java/com/android/server/storage/StorageSessionController.java"
+  "StorageSessionController.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  4049
+  '(1495 nil)
+  nil
+  nil
+  '((buffer-display-time 24131 10258 881993 421000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1 1495))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/android/os/storage/StorageManagerInternal.java"
+  "StorageManagerInternal.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  5501
+  '(678 nil)
+  nil
+  nil
+  '((buffer-display-time 24130 18108 624692 291000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (678 678 678 1 650))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/tests/tests/permission2/CtsStoragePermissionsPreservedUserOptOutSdk30/AndroidManifest.xml"
+  "AndroidManifest.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  1069
+  '(1148 nil)
+  nil
+  nil
+  '((buffer-display-time 24130 14642 877217 907000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1148 1148 1102 1218 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/services/core/java/com/android/server/SystemService.java"
+  "SystemService.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  5511
+  '(7969 nil)
+  nil
+  nil
+  '((buffer-display-time 24130 6090 78393 21000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/services/core/java/com/android/server/SystemServiceManager.java"
+  "SystemServiceManager.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1055
+  '(1004 nil)
+  nil
+  nil
+  '((buffer-display-time 24130 5378 2956 784000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/com/android/internal/content/PackageMonitor.java"
+  "PackageMonitor.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  2397
+  '(3331 nil)
+  nil
+  nil
+  '((buffer-display-time 24129 62373 959750 380000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (3313 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/android/content/Context.java"
+  "Context.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  127169
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24129 62293 1003 207000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/android/content/pm/PackageItemInfo.java"
+  "PackageItemInfo.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24129 53999 462602 346000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/services/Car/tests/CarDeveloperOptions/src/com/android/car/developeroptions/applications/appinfo/AppInfoDashboardFragment.java"
+  "AppInfoDashboardFragment.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  22124
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24129 53876 710401 655000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/services/core/java/com/android/server/net/NetworkPolicyManagerService.java"
+  "NetworkPolicyManagerService.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  59450
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24129 53865 960298 837000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/apex/jobscheduler/service/java/com/android/server/DeviceIdleController.java"
+  "DeviceIdleController.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  97209
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24129 53848 98099 167000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/apex/jobscheduler/service/java/com/android/server/usage/AppStandbyController.java"
+  "AppStandbyController.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  45480
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24129 53595 380225 246000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/apex/blobstore/service/java/com/android/server/blob/BlobStoreManagerService.java"
+  "BlobStoreManagerService.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  25427
+  '(1048 nil)
+  nil
+  nil
+  '((buffer-display-time 24129 53581 798471 348000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1374 1374 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/tests/tests/permission2/CtsStoragePermissionsUserDefaultSdk29/Android.bp"
+  "Android.bp"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  755
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24129 41451 308596 899000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/tests/tests/permission2/Android.bp"
+  "Android.bp"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  1405
+  '(1713 nil)
+  nil
+  nil
+  '((buffer-display-time 24129 10651 763530 233000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/tests/tests/permission2/CtsStoragePermissionsUserDefaultSdk28/Android.bp"
+  "Android.bp"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  698
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24129 5903 39153 376000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "CtsStoragePermissionsUserDefaultSdk28"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  328
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/cts/tests/tests/permission2/CtsStoragePermissionsUserDefaultSdk28/")
+  '((buffer-display-time 24129 5552 441344 736000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "CtsStoragePermissionsUserDefaultSdk29"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  328
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/cts/tests/tests/permission2/CtsStoragePermissionsUserDefaultSdk29/")
+  '((buffer-display-time 24129 5539 396040 659000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/tests/tests/permission2/CtsStoragePermissionsUserDefaultSdk29/AndroidManifest.xml"
+  "AndroidManifest.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  1023
+  '(1102 nil)
+  nil
+  nil
+  '((buffer-display-time 24129 5345 857451 257000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "permission2"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1631
+  '(2101 nil)
+  t
+  '("/usr/local/ssd-extra/android/master/cts/tests/tests/permission2/")
+  '((buffer-display-time 24129 4884 784733 959000))
+  '((mark-ring (2044))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/tests/tests/permission2/CtsStoragePermissionsUserOptOutSdk29/AndroidManifest.xml"
+  "AndroidManifest.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  808
+  '(760 nil)
+  nil
+  nil
+  '((buffer-display-time 24129 2101 688279 830000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "CtsStoragePermissionsUserOptOutSdk29"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  394
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/cts/tests/tests/permission2/CtsStoragePermissionsUserOptOutSdk29/")
+  '((buffer-display-time 24129 1851 375073 904000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/tests/tests/permission2/AndroidTest.xml"
+  "AndroidTest.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  3582
+  '(3872 nil)
+  nil
+  nil
+  '((buffer-display-time 24129 1797 116698 515000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (3868 3841 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/tests/tests/permission2/CtsStoragePermissionsPreservedUserOptOutSdk30/Android.bp"
+  "Android.bp"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  646
+  '(703 nil)
+  nil
+  nil
+  '((buffer-display-time 24129 1342 371450 851000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (658 1))))
+
+(desktop-create-buffer 208
+  nil
+  "CtsStoragePermissionsPreservedUserOptOutSdk30"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  336
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/cts/tests/tests/permission2/CtsStoragePermissionsPreservedUserOptOutSdk30/")
+  '((buffer-display-time 24129 1229 451576 355000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/external/libfuse/lib/fuse_loop_mt.c"
+  "fuse_loop_mt.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  3441
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24128 64492 737236 934000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "cts"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  267
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/cts/")
+  '((buffer-display-time 24128 56023 62646 160000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/external/e2fsprogs/contrib/fsstress.c"
+  "fsstress.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  12082
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24128 17722 334707 75000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "external"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  4298
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/external/")
+  '((buffer-display-time 24128 15828 105122 287000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/fs/fuse/fuse_i.h"
+  "fuse_i.h"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  14612
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24127 56653 723798 867000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/fs/fuse/dir.c"
+  "dir.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  40417
+  '(8416 nil)
+  nil
+  nil
+  '((buffer-display-time 24127 56638 220358 40000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/fs/fuse/file.c"
+  "file.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  39328
+  '(7810 nil)
+  nil
+  nil
+  '((buffer-display-time 24127 56492 434478 484000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/usr/local/google/home/zezeozue/scratch/bugreport-crosshatch-MASTER-2020-02-08-14-18-04.zip"
+  "bugreport-crosshatch-MASTER-2020-02-08-14-18-04.zip"
+  'archive-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  60764
+  '(250 nil)
+  t
+  nil
+  '((buffer-display-time 24127 20545 458512 194000) (buffer-file-coding-system . no-conversion-multibyte))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/fs/fuse/inode.c"
+  "inode.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  3418
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24127 18840 864401 444000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/external/libfuse/lib/fuse_loop.c"
+  "fuse_loop.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  599
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24126 40400 985407 428000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/external/libfuse/lib/cuse_lowlevel.c"
+  "cuse_lowlevel.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  8721
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24126 40144 13924 604000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/external/libfuse/include/fuse_common.h"
+  "fuse_common.h"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  23109
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24126 37725 654058 483000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/external/libfuse/lib/buffer.c"
+  "buffer.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24126 37236 102284 101000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/hostsidetests/appsecurity/test-apps/ReadExternalStorageApp/AndroidManifest.xml"
+  "AndroidManifest.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  920
+  '(859 nil)
+  nil
+  nil
+  '((buffer-display-time 24126 18454 853152 417000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/hostsidetests/appsecurity/test-apps/ReadExternalStorageApp/Android.bp"
+  "Android.bp"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24126 17839 688495 202000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/hostsidetests/appsecurity/test-apps/ReadExternalStorageApp/src/com/android/cts/readexternalstorageapp/ReadExternalStorageTest.java"
+  "ReadExternalStorageTest.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  2894
+  '(3650 nil)
+  nil
+  nil
+  '((buffer-display-time 24126 17831 315291 867000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/deploy.sh"
+  "deploy.sh"
+  'sh-mode
+  '(global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode which-key-mode)
+  57
+  '(57 nil)
+  nil
+  nil
+  '((buffer-display-time 24126 12044 194278 472000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/sepolicy/private/zygote.te"
+  "zygote.te"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  4752
+  '(4343 nil)
+  nil
+  nil
+  '((buffer-display-time 24126 11062 105434 258000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (4752 4515 4752 4752 1981))))
+
+(desktop-create-buffer 208
+  "/usr/local/google/home/zezeozue/Downloads/bugreport-flame-RP1A.200115.001.C1-2020-01-22-12-07-31-tmp_REDACTED.zip"
+  "bugreport-flame-RP1A.200115.001.C1-2020-01-22-12-07-31-tmp_REDACTED.zip"
+  'archive-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  15750
+  '(224 nil)
+  t
+  nil
+  '((buffer-display-time 24126 9780 136993 950000) (buffer-file-coding-system . no-conversion-multibyte))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/src/com/android/providers/media/scan/ModernMediaScanner.java"
+  "ModernMediaScanner.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  15794
+  '(8983 nil)
+  nil
+  nil
+  '((buffer-display-time 24126 4862 735762 919000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (8936 8983 8983 8983 8983 8983 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/services/core/java/com/android/server/pm/Settings.java"
+  "Settings.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  207784
+  '(2414 nil)
+  nil
+  nil
+  '((buffer-display-time 24126 2828 17696 253000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2414 2414 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/android/os/Process.java"
+  "Process.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  822
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24125 51129 507091 297000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/services/core/java/android/content/pm/PackageManagerInternal.java"
+  "PackageManagerInternal.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  7983
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24125 51030 674342 572000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/android/content/pm/PackageParser.java"
+  "PackageParser.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  157605
+  '(2637 nil)
+  nil
+  nil
+  '((buffer-display-time 24125 11229 731138 405000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2637 2637 2637 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/google/home/zezeozue/AndroidStudioProjects/StorageTestApp/google3/experimental/users/zezeozue/StorageTestApp/app/src/main/AndroidManifest.xml"
+  "AndroidManifest.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  475
+  '(324 nil)
+  nil
+  nil
+  '((buffer-display-time 24124 55347 635334 110000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (370 293 212))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/services/tests/servicestests/src/com/android/server/appop/AppOpsActiveWatcherTest.java"
+  "AppOpsActiveWatcherTest.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  5382
+  '(5340 nil)
+  nil
+  nil
+  '((buffer-display-time 24124 54627 61709 633000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (5541 5312 4540 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/packages/SettingsLib/src/com/android/settingslib/location/RecentLocationAccesses.java"
+  "RecentLocationAccesses.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  3202
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24124 53088 467160 333000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/services/core/java/com/android/server/pm/permission/PermissionManagerService.java"
+  "PermissionManagerService.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  57129
+  '(2339 nil)
+  nil
+  nil
+  '((buffer-display-time 24124 40177 22078 16000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/vold/model/Disk.h"
+  "Disk.h"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  622
+  '(689 nil)
+  nil
+  nil
+  '((buffer-display-time 24124 23382 957251 923000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/vold/model/PublicVolume.cpp"
+  "PublicVolume.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1693
+  '(4775 nil)
+  nil
+  nil
+  '((buffer-display-time 24124 23234 860267 720000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (4486 4485 4508 4514 4433 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/vold/model/Disk.cpp"
+  "Disk.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  7084
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24124 23188 938850 289000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/vold/model/StubVolume.cpp"
+  "StubVolume.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1263
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24124 22904 827608 401000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/vold/VolumeManager.h"
+  "VolumeManager.h"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  8331
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24124 22369 130064 576000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/services/tests/servicestests/src/com/android/server/net/watchlist/WatchlistLoggingHandlerTests.java"
+  "WatchlistLoggingHandlerTests.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  4311
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24123 65239 984447 835000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/services/core/java/com/android/server/stats/pull/StatsPullAtomService.java"
+  "StatsPullAtomService.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  120864
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24123 65234 321592 410000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/services/core/java/com/android/server/pm/PackageManagerShellCommand.java"
+  "PackageManagerShellCommand.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  14940
+  '(127434 nil)
+  nil
+  nil
+  '((buffer-display-time 24123 65229 602238 806000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/hostsidetests/devicepolicy/app/DeviceOwner/src/com/android/cts/deviceowner/DeviceOwnerProvisioningTest.java"
+  "DeviceOwnerProvisioningTest.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  4266
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24123 65220 957525 880000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/hostsidetests/devicepolicy/app/DeviceOwner/src/com/android/cts/deviceowner/CreateAndManageUserTest.java"
+  "CreateAndManageUserTest.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  15057
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24123 65216 666616 346000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/android/content/pm/ParceledListSlice.java"
+  "ParceledListSlice.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1005
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24123 65171 994412 995000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/android/content/pm/IPackageManager.aidl"
+  "IPackageManager.aidl"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  6559
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24123 65128 987452 143000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/android/content/pm/PackageManager.java"
+  "PackageManager.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  190518
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24123 64388 620438 13000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/com/android/server/LocalServices.java"
+  "LocalServices.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1037
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24123 63398 584194 506000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/android/os/Build.java"
+  "Build.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  15383
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24123 60926 448754 549000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/res/res/values/symbols.xml"
+  "symbols.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  93708
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24123 60765 203788 884000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/res/res/values/config.xml"
+  "config.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  86351
+  '(3667 nil)
+  nil
+  nil
+  '((buffer-display-time 24123 60688 307389 542000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (3667))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/res/res/values/public.xml"
+  "public.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  200142
+  '(199878 nil)
+  nil
+  nil
+  '((buffer-display-time 24123 60598 440462 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (199878 202368 195783 195705))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/external/libfuse/lib/fuse.c"
+  "fuse.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  81041
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24123 36098 413585 145000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/inputmethods/LatinIME/java/src/com/android/inputmethod/keyboard/MoreKeysKeyboardView.java"
+  "MoreKeysKeyboardView.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  11744
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24123 29182 837761 525000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/inputmethods/LatinIME/java/src/com/android/inputmethod/keyboard/MainKeyboardView.java"
+  "MainKeyboardView.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  32545
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24123 29181 20133 18000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/android/os/storage/StorageVolume.java"
+  "StorageVolume.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  19218
+  '(8555 nil)
+  nil
+  nil
+  '((buffer-display-time 24123 18763 26135 90000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  nil
+  "core"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  286
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/frameworks/base/core/")
+  '((buffer-display-time 24123 17065 941087 71000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/src/com/android/providers/media/util/Metrics.java"
+  "Metrics.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  2888
+  '(3219 nil)
+  nil
+  nil
+  '((buffer-display-time 24122 49971 750689 514000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1 2608))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/src/com/android/providers/media/scan/LegacyMediaScanner.java"
+  "LegacyMediaScanner.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1327
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24122 43626 597163 344000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/src/com/android/providers/media/scan/MediaScanner.java"
+  "MediaScanner.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1748
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24122 43619 150308 304000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/src/com/android/providers/media/scan/NullMediaScanner.java"
+  "NullMediaScanner.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1619
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24122 43613 228130 85000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/google/home/zezeozue/scratch/l4.txt"
+  "l4.txt"
+  'text-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  3759
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24122 38964 514922 511000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/libcore/ojluni/src/main/java/java/nio/file/FileVisitor.java"
+  "FileVisitor.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  3011
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24122 38526 472774 927000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/com/android/internal/content/FileSystemProvider.java"
+  "FileSystemProvider.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  5861
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24122 38340 252015 600000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/vold/model/VolumeBase.h"
+  "VolumeBase.h"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  2812
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24121 55058 649483 452000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/vold/model/VolumeBase.cpp"
+  "VolumeBase.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1277
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24121 53687 114654 505000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/libcore/metrictests/memory/host/src/libcore/heapmetrics/MetricsRunner.java"
+  "MetricsRunner.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  9059
+  '(1278 nil)
+  nil
+  nil
+  '((buffer-display-time 24121 53668 824717 39000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1278 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/libcore/metrictests/memory/apps/src/libcore/heapdumper/PssInstrumentation.java"
+  "PssInstrumentation.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1158
+  '(1885 nil)
+  nil
+  nil
+  '((buffer-display-time 24121 2946 452935 962000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1777 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/tools/tradefederation/core/util-apps/ContentProvider/main/java/android/tradefed/contentprovider/ManagedFileContentProvider.java"
+  "ManagedFileContentProvider.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1840
+  '(1115 nil)
+  nil
+  nil
+  '((buffer-display-time 24121 2940 396266 854000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1115 1115 1115 1100 1062 1115 1115 1115 1115 1115 1115 1115 1115 1115 1115 1115))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/tools/tradefederation/core/util-apps/ContentProvider/main/AndroidManifest.xml"
+  "AndroidManifest.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  970
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24121 2787 193741 889000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/libcore/metrictests/memory/apps/src/libcore/heapdumper/AbstractMetricInstrumentation.java"
+  "AbstractMetricInstrumentation.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  2003
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24121 2728 434265 302000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/android/net/Uri.java"
+  "Uri.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  63311
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24120 61720 715047 805000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/hostsidetests/appsecurity/src/android/appsecurity/cts/ExternalStorageHostTest.java"
+  "ExternalStorageHostTest.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  7654
+  '(1270 nil)
+  nil
+  nil
+  '((buffer-display-time 24120 60914 892926 523000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1270 1270 1270 1270 1270 1270 1270 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/tools/tradefederation/core/util-apps/ContentProvider/main/Android.bp"
+  "Android.bp"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  671
+  '(694 nil)
+  nil
+  nil
+  '((buffer-display-time 24120 56340 464013 612000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/libcore/metrictests/memory/host/src/libcore/heapmetrics/LibcoreHeapMetricsTest.java"
+  "LibcoreHeapMetricsTest.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  4900
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24120 54085 338975 541000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/libcore/metrictests/memory/host/AndroidTest.xml"
+  "AndroidTest.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  1145
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24120 53799 279266 602000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/libcore/AndroidTest-core-tests.xml"
+  "AndroidTest-core-tests.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  196
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24120 53776 565887 65000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "heapdumper"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  556
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/libcore/metrictests/memory/apps/src/libcore/heapdumper/")
+  '((buffer-display-time 24120 53619 463564 762000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "libcore"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  303
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/libcore/metrictests/memory/apps/src/libcore/")
+  '((buffer-display-time 24120 53619 30663 442000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "src"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  294
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/libcore/metrictests/memory/apps/src/")
+  '((buffer-display-time 24120 53617 972362 469000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/libcore/metrictests/memory/apps/AndroidManifest.xml"
+  "AndroidManifest.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  1373
+  '(1382 nil)
+  nil
+  nil
+  '((buffer-display-time 24120 53616 624983 218000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/bionic/libc/include/sys/stat.h"
+  "stat.h"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  5762
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24120 47158 720701 400000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/google/home/zezeozue/scratch/dummyfiles.sh"
+  "dummyfiles.sh"
+  'sh-mode
+  '(global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode which-key-mode)
+  245
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24118 35811 797864 290000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/arch/arm64/configs/wahoo_defconfig"
+  "wahoo_defconfig"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  6717
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24118 34011 864508 793000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "configs"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  916
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/arch/arm64/configs/")
+  '((buffer-display-time 24117 29106 255005 776000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "arm64"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  364
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/arch/arm64/")
+  '((buffer-display-time 24117 29103 621192 756000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "boot"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  244
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/arch/arm64/boot/")
+  '((buffer-display-time 24117 29101 815153 641000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "arch"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  481
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/arch/")
+  '((buffer-display-time 24117 29095 221155 623000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/google/home/zezeozue/Downloads/fsstress-run (1).sh"
+  "fsstress-run (1).sh"
+  'sh-mode
+  '(global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode which-key-mode)
+  90
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24117 21150 52406 119000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/services/core/java/com/android/server/am/ProcessList.java"
+  "ProcessList.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  70991
+  '(1139 nil)
+  nil
+  nil
+  '((buffer-display-time 24117 17930 25074 10000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1139 1139 1139 1139 1139 1139 1139 1139 1139 1139 1139))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/services/core/java/com/android/server/am/ProcessRecord.java"
+  "ProcessRecord.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24117 10379 363903 24000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/android/content/ContentProvider.java"
+  "ContentProvider.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  41417
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24117 7483 582591 626000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/android/content/ContentUris.java"
+  "ContentUris.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1255
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24116 2080 142523 847000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/src/com/android/providers/media/MediaDocumentsProvider.java"
+  "MediaDocumentsProvider.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  68077
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24114 52621 477990 708000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/aosp/system/sepolicy/private/bug_map"
+  "bug_map"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  1316
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24114 52575 64087 928000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/aosp/system/sepolicy/public/domain.te"
+  "domain.te"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  48012
+  '(47735 nil)
+  nil
+  nil
+  '((buffer-display-time 24114 49526 984525 878000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/tests/tests/provider/src/android/provider/cts/media/MediaStore_Images_MediaTest.java"
+  "MediaStore_Images_MediaTest.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  13752
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24114 45134 897001 811000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/tests/tests/provider/AndroidTest.xml"
+  "AndroidTest.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  1497
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24114 44817 634777 100000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/tests/tests/provider/preconditions/src/android/provider/cts/preconditions/ExternalStoragePreparer.java"
+  "ExternalStoragePreparer.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  2989
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24114 44811 232212 945000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/tests/tests/provider/AndroidManifest.xml"
+  "AndroidManifest.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  733
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24114 44768 450622 674000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/tests/tests/provider/Android.bp"
+  "Android.bp"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  50
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24114 44694 868458 120000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/sepolicy/public/domain.te"
+  "domain.te"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  48061
+  '(48061 nil)
+  nil
+  nil
+  '((buffer-display-time 24114 39189 891130 978000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (48061))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/sepolicy/public/file.te"
+  "file.te"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  10527
+  '(14468 nil)
+  nil
+  nil
+  '((buffer-display-time 24114 39028 936933 48000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (14468 14468))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/hostsidetests/appsecurity/test-apps/ExternalStorageApp/src/com/android/cts/externalstorageapp/CommonExternalStorageTest.java"
+  "CommonExternalStorageTest.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  11480
+  '(9664 nil)
+  nil
+  nil
+  '((buffer-display-time 24114 38819 398853 724000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (9664 9664 9664 9664 9664 9664 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/fs/locks.c"
+  "locks.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  63151
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24114 22688 156472 666000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/include/linux/fs.h"
+  "fs.h"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  51815
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24114 22477 417374 42000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/fs/sdcardfs/file.c"
+  "file.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  136
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24113 61262 846287 37000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/fs/sdcardfs/dentry.c"
+  "dentry.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  4663
+  '(239 nil)
+  nil
+  nil
+  '((buffer-display-time 24113 61122 388900 616000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/fs/sdcardfs/inode.c"
+  "inode.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  22717
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24113 61081 269336 539000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/include/uapi/asm-generic/fcntl.h"
+  "fcntl.h"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  5183
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24113 60957 522981 891000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/src/com/android/providers/media/util/DatabaseUtils.java"
+  "DatabaseUtils.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  20282
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24113 43417 311648 753000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/hostsidetests/appsecurity/test-apps/MultiUserStorageApp/src/com/android/cts/multiuserstorageapp/MultiUserStorageTest.java"
+  "MultiUserStorageTest.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  6947
+  '(6481 nil)
+  nil
+  nil
+  '((buffer-display-time 24113 5200 582216 98000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2543 1 7189))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/android/database/DatabaseUtils.java"
+  "DatabaseUtils.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  8907
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24112 5497 136577 811000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/src/com/android/providers/media/util/MimeUtils.java"
+  "MimeUtils.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1347
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24112 2529 227004 646000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/apps/Car/SystemUpdater/AndroidManifest.xml"
+  "AndroidManifest.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  1226
+  '(853 nil)
+  nil
+  nil
+  '((buffer-display-time 24111 62954 699639 180000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (773))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/AndroidManifest.xml"
+  "AndroidManifest.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  1202
+  '(1048 nil)
+  nil
+  nil
+  '((buffer-display-time 24111 61909 355291 397000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1044 966))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/data/etc/com.android.settings.xml"
+  "com.android.settings.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  3463
+  '(2751 nil)
+  nil
+  nil
+  '((buffer-display-time 24111 58926 903099 32000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (2751 2751))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/data/etc/car/com.android.car.developeroptions.xml"
+  "com.android.car.developeroptions.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  3134
+  '(2422 nil)
+  nil
+  nil
+  '((buffer-display-time 24111 58810 995272 408000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (2422))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/data/etc/com.android.systemui.xml"
+  "com.android.systemui.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  3702
+  '(1222 nil)
+  nil
+  nil
+  '((buffer-display-time 24111 58766 383281 916000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1222 1222 1222))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/data/etc/privapp-permissions-platform.xml"
+  "privapp-permissions-platform.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  17189
+  '(2908 nil)
+  nil
+  nil
+  '((buffer-display-time 24111 58603 871971 558000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (2908 2908 2908 2908 2904 2836))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/data/etc/platform.xml"
+  "platform.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  1
+  '(2342 nil)
+  nil
+  nil
+  '((buffer-display-time 24111 58298 462741 728000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (2305 2200 2342))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/sepolicy/private/file_contexts"
+  "file_contexts"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  38450
+  '(12161 nil)
+  nil
+  nil
+  '((buffer-display-time 24111 6557 862137 634000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/sepolicy/public/vold.te"
+  "vold.te"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  3957
+  '(4010 nil)
+  nil
+  nil
+  '((buffer-display-time 24108 30598 48175 963000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (4010 4008 4010 4010 4006 3905))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/apps/TvSettings/Settings/AndroidManifest.xml"
+  "AndroidManifest.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  2507
+  '(2665 nil)
+  nil
+  nil
+  '((buffer-display-time 24108 30556 33784 76000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (2583 2715))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/packages/SharedStorageBackup/AndroidManifest.xml"
+  "AndroidManifest.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  936
+  '(936 nil)
+  nil
+  nil
+  '((buffer-display-time 24108 29798 905381 770000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (858))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/packages/SystemUI/AndroidManifest.xml"
+  "AndroidManifest.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  1773
+  '(1419 nil)
+  nil
+  nil
+  '((buffer-display-time 24108 29470 293287 66000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1337))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/packages/ExternalStorageProvider/AndroidManifest.xml"
+  "AndroidManifest.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  856
+  '(361 nil)
+  nil
+  nil
+  '((buffer-display-time 24108 28705 785184 561000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (279))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/DownloadProvider/AndroidManifest.xml"
+  "AndroidManifest.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  3752
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24108 28435 486051 81000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/core/include/cutils/android_filesystem_config.h"
+  "android_filesystem_config.h"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  6882
+  '(6948 nil)
+  nil
+  nil
+  '((buffer-display-time 24108 26014 770994 347000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (6882 6815 7234 6959 6951 6807 1))))
+
+(desktop-create-buffer 208
+  nil
+  "core"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  4694
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/system/core/")
+  '((buffer-display-time 24108 20066 155828 729000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/legacy/Android.bp"
+  "Android.bp"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  437
+  '(418 nil)
+  nil
+  nil
+  '((buffer-display-time 24107 63080 369923 526000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/apps/Settings/AndroidManifest.xml"
+  "AndroidManifest.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  533
+  '(479 nil)
+  nil
+  nil
+  '((buffer-display-time 24107 57029 373355 838000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (479 401 22507))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/legacy/src/com/android/providers/media/LegacyMediaProvider.java"
+  "LegacyMediaProvider.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1007
+  '(667 nil)
+  nil
+  nil
+  '((buffer-display-time 24107 54748 52304 973000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (667 660 667 667 667 667 667 667 667 4484 4485 667 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/Android.bp"
+  "Android.bp"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  1542
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24107 53958 860143 591000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "media"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  331
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/legacy/src/com/android/providers/media/")
+  '((buffer-display-time 24107 53738 420318 764000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "providers"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  325
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/legacy/src/com/android/providers/")
+  '((buffer-display-time 24107 53737 995638 436000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "android"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  315
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/legacy/src/com/android/")
+  '((buffer-display-time 24107 53737 539394 83000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "com"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  306
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/legacy/src/com/")
+  '((buffer-display-time 24107 53735 938140 856000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/legacy/AndroidManifest.xml"
+  "AndroidManifest.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24107 52816 934548 272000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/services/core/java/com/android/server/notification/NotificationUsageStats.java"
+  "NotificationUsageStats.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24106 48394 743243 220000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/hostsidetests/appsecurity/test-apps/MediaStorageApp/src/com/android/cts/mediastorageapp/MediaStorageTest.java"
+  "MediaStorageTest.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  4587
+  '(5406 nil)
+  nil
+  nil
+  '((buffer-display-time 24106 47643 514352 717000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (3959 5465 5533 2597 3830 3948 3267 3382 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/tests/tests/permission2/res/raw/android_manifest.xml"
+  "android_manifest.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  177033
+  '(2552 nil)
+  nil
+  nil
+  '((buffer-display-time 24106 15173 474204 133000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (2552 2552))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/tests/tests/permission2/res/raw/automotive_android_manifest.xml"
+  "automotive_android_manifest.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  17038
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24105 57198 329316 590000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/res/AndroidManifest.xml"
+  "AndroidManifest.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  180287
+  '(3425 nil)
+  nil
+  nil
+  '((buffer-display-time 24105 57164 829288 886000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (3425 3425 3425))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/api/system-current.txt"
+  "system-current.txt"
+  'text-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  426529
+  '(470 nil)
+  nil
+  nil
+  '((buffer-display-time 24105 20172 466081 294000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (470 470))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/hostsidetests/appsecurity/test-apps/MediaStorageApp/Android.bp"
+  "Android.bp"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  1581
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24105 13956 75458 187000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "MediaStorageApp"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  463
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/cts/hostsidetests/appsecurity/test-apps/MediaStorageApp/")
+  '((buffer-display-time 24105 13926 897224 876000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/hostsidetests/appsecurity/test-apps/MediaStorageApp/AndroidManifest28.xml"
+  "AndroidManifest28.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  1745
+  '(1745 nil)
+  nil
+  nil
+  '((buffer-display-time 24105 13885 571601 886000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1802))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/android/os/PowerManager.java"
+  "PowerManager.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  56512
+  '(749 nil)
+  nil
+  nil
+  '((buffer-display-time 24104 19575 122252 571000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/sepolicy/public/mediadrmserver.te"
+  "mediadrmserver.te"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24104 11651 304139 386000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/sepolicy/public/mediaprovider.te"
+  "mediaprovider.te"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  134
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24104 11639 57341 43000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/sepolicy/private/mediaprovider.te"
+  "mediaprovider.te"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  199
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24104 11629 38485 741000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "sepolicy"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  282
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/system/sepolicy/")
+  '((buffer-display-time 24104 11601 269044 425000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "system"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  779
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/system/")
+  '((buffer-display-time 24104 11362 522664 538000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/android/os/storage/VolumeInfo.java"
+  "VolumeInfo.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  11982
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24104 10379 454522 721000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/tests/net/java/com/android/server/connectivity/PermissionMonitorTest.java"
+  "PermissionMonitorTest.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  33332
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24102 59876 640073 261000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/core/libappfuse/FuseBridgeLoop.cc"
+  "FuseBridgeLoop.cc"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1070
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24102 59686 51602 376000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/core/libappfuse/FuseBuffer.cc"
+  "FuseBuffer.cc"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24102 58194 62164 468000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/com/android/internal/os/AppFuseMount.java"
+  "AppFuseMount.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1148
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24102 58084 105203 977000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/services/core/java/com/android/server/storage/AppFuseBridge.java"
+  "AppFuseBridge.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  2795
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24102 58076 930390 149000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/services/core/jni/com_android_server_storage_AppFuseBridge.cpp"
+  "com_android_server_storage_AppFuseBridge.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  3682
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24102 57955 377648 488000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/core/libappfuse/FuseAppLoop.cc"
+  "FuseAppLoop.cc"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24102 57815 861231 820000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/core/libappfuse/EpollController.cc"
+  "EpollController.cc"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24102 57810 695427 158000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/core/libappfuse/include/libappfuse/FuseBridgeLoop.h"
+  "FuseBridgeLoop.h"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1857
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24102 57600 954036 534000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/vold/AppFuseUtil.cpp"
+  "AppFuseUtil.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  4705
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24102 56167 546864 498000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/sepolicy/private/priv_app.te"
+  "priv_app.te"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  2618
+  '(2308 nil)
+  nil
+  nil
+  '((buffer-display-time 24102 46212 757206 444000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2308 2308 2308))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/aosp/system/sepolicy/private/installd.te"
+  "installd.te"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  36
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24102 45333 804120 730000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/sepolicy/public/installd.te"
+  "installd.te"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  2614
+  '(2612 nil)
+  nil
+  nil
+  '((buffer-display-time 24102 45323 863434 621000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2614 2612 2573))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/tests/app/DownloadManagerApi28Test/src/android/app/cts/DownloadManagerApi28Test.java"
+  "DownloadManagerApi28Test.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  10019
+  '(1641 nil)
+  nil
+  nil
+  '((buffer-display-time 24098 49453 725430 948000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1641 10 1641 1641 1641 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/tests/app/src/android/app/cts/DownloadManagerTestBase.java"
+  "DownloadManagerTestBase.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  15582
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24098 49333 319563 601000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/tests/app/Android.bp"
+  "Android.bp"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  1986
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24098 6900 678582 5000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/tests/app/DownloadManagerApi28Test/AndroidTest.xml"
+  "AndroidTest.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  1045
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24098 6750 453332 811000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/DownloadProvider/src/com/android/providers/downloads/DownloadProvider.java"
+  "DownloadProvider.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  54372
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24098 2694 600499 76000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/android/app/DownloadManager.java"
+  "DownloadManager.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  67219
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24098 1854 279045 120000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/DownloadProvider/src/com/android/providers/downloads/Helpers.java"
+  "Helpers.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  23379
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24098 1191 694524 413000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/android/content/pm/PackageInstaller.java"
+  "PackageInstaller.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  82784
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24097 50378 188108 177000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/services/core/java/com/android/server/pm/PackageInstallerSession.java"
+  "PackageInstallerSession.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  46177
+  '(687 nil)
+  nil
+  nil
+  '((buffer-display-time 24097 50169 207140 374000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (687))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/services/core/java/com/android/server/pm/PackageInstallerService.java"
+  "PackageInstallerService.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24097 50103 500451 602000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1 5099))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/services/core/java/com/android/server/storage/StorageUserConnection.java"
+  "StorageUserConnection.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  2405
+  '(1906 nil)
+  nil
+  nil
+  '((buffer-display-time 24097 47996 271027 372000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1906 1906 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/jni/RedactionInfo.cpp"
+  "RedactionInfo.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  2840
+  '(1923 nil)
+  nil
+  nil
+  '((buffer-display-time 24096 46146 448121 242000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/core/java/android/os/ParcelFileDescriptor.java"
+  "ParcelFileDescriptor.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  6449
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24096 982 206482 637000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/logging.sh"
+  "logging.sh"
+  'sh-mode
+  '(global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode which-key-mode)
+  610
+  '(23 nil)
+  nil
+  nil
+  '((buffer-display-time 24095 62589 766477 416000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (23 23 23 23 23 23 23 23 23 23 23 23 23))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/sepolicy/public/global_macros"
+  "global_macros"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  2549
+  '(2688 nil)
+  nil
+  nil
+  '((buffer-display-time 24095 60400 902602 961000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/aosp/system/sepolicy/private/priv_app.te"
+  "priv_app.te"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  2142
+  '(355 nil)
+  nil
+  nil
+  '((buffer-display-time 24095 60175 639358 628000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/hostsidetests/appsecurity/test-apps/StorageStatsApp/src/com/android/cts/storagestatsapp/StorageStatsTest.java"
+  "StorageStatsTest.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  14418
+  '(58 nil)
+  nil
+  nil
+  '((buffer-display-time 24095 27002 723739 460000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (15006 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/core/init/mount_namespace.cpp"
+  "mount_namespace.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  9654
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24093 49385 859150 303000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/tools/tradefederation/core/test_framework/com/android/tradefed/testtype/junit4/BaseHostJUnit4Test.java"
+  "BaseHostJUnit4Test.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  6049
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24093 47750 56758 828000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/sepolicy/public/app.te"
+  "app.te"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  9664
+  '(9634 nil)
+  nil
+  nil
+  '((buffer-display-time 24093 45263 410554 277000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (9634 9468))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/sepolicy/private/file.te"
+  "file.te"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  78
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24093 41131 548473 366000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/jni/TEST_MAPPING"
+  "TEST_MAPPING"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  115
+  '(65 nil)
+  nil
+  nil
+  '((buffer-display-time 24093 31185 861335 118000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (65))))
+
+(desktop-create-buffer 208
+  nil
+  "jni"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  303
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/packages/providers/MediaProvider/jni/")
+  '((buffer-display-time 24093 29972 472185 128000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/libcore/ojluni/src/main/java/java/io/File.java"
+  "File.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  58492
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24093 24508 233642 67000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/hostsidetests/appsecurity/test-apps/WriteExternalStorageApp/src/com/android/cts/writeexternalstorageapp/WriteGiftTest.java"
+  "WriteGiftTest.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  2330
+  '(2285 nil)
+  nil
+  nil
+  '((buffer-display-time 24093 23201 351442 730000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2285 2285 2285 2383 61 58 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/hostsidetests/appsecurity/test-apps/MultiUserStorageApp/AndroidManifest.xml"
+  "AndroidManifest.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  916
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24093 21323 361861 18000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/hostsidetests/appsecurity/test-apps/MultiUserStorageApp/Android.bp"
+  "Android.bp"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24093 21206 840502 682000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/hostsidetests/appsecurity/test-apps/WriteExternalStorageApp/AndroidManifest.xml"
+  "AndroidManifest.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  740
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24093 20947 918864 122000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/native/cmds/installd/InstalldNativeService.cpp"
+  "InstalldNativeService.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  193
+  '(1682 nil)
+  nil
+  nil
+  '((buffer-display-time 24093 20767 890864 18000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1682 1682 1682 1682 1682 1682 1682 1 125))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/aosp/frameworks/native/cmds/installd/InstalldNativeService.cpp"
+  "InstalldNativeService.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  3042
+  '(3125 nil)
+  nil
+  nil
+  '((buffer-display-time 24089 54581 784057 303000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (3125 3125 3125 3125 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/external/libfuse/lib/fuse_versionscript"
+  "fuse_versionscript"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  2439
+  '(3083 nil)
+  nil
+  nil
+  '((indent-tabs-mode . t) (buffer-display-time 24089 40019 4553 689000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (215 195 173))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/external/libfuse/include/fuse.h"
+  "fuse.h"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  40762
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24089 28119 123220 139000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/sepolicy/private/compat/29.0/29.0.ignore.cil"
+  "29.0.ignore.cil"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  2264
+  '(306 nil)
+  nil
+  nil
+  '((buffer-display-time 24088 28053 445798 575000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (390 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/sepolicy/prebuilts/api/29.0/private/file_contexts"
+  "file_contexts"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  33066
+  '(33177 nil)
+  nil
+  nil
+  '((buffer-display-time 24088 24850 479425 349000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (33121 33066))))
+
+(desktop-create-buffer 208
+  nil
+  "services"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  298
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/frameworks/base/services/")
+  '((buffer-display-time 24088 20047 269521 564000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/include/uapi/linux/android/binder.h"
+  "binder.h"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  13796
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24088 18895 559180 636000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/kernel-wahoo/private/msm-google/drivers/android/binder.c"
+  "binder.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  89717
+  '(100952 nil)
+  nil
+  nil
+  '((buffer-display-time 24088 16425 14917 512000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (89717 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/kernel-common-4.19/common/drivers/android/binder.c"
+  "binder.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  97285
+  '(2 nil)
+  nil
+  nil
+  '((buffer-display-time 24088 15874 43941 219000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2 2 2 2 2 1))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/test-base/src/junit/framework/Assert.java"
+  "Assert.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  766
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24088 7387 850457 77000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/hostsidetests/appsecurity/src/android/appsecurity/cts/DocumentsTestCase.java"
+  "DocumentsTestCase.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  2014
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24087 62237 695461 688000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/hostsidetests/appsecurity/src/android/appsecurity/cts/BaseAppSecurityTest.java"
+  "BaseAppSecurityTest.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  2297
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24087 62232 920561 630000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/hostsidetests/appsecurity/src/android/appsecurity/cts/AccessSerialNumberTest.java"
+  "AccessSerialNumberTest.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  1474
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24087 62230 618860 612000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/aosp/system/sepolicy/public/installd.te"
+  "installd.te"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  2613
+  '(2612 nil)
+  nil
+  nil
+  '((buffer-display-time 24087 59844 766712 326000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2612 1))))
+
+(desktop-create-buffer 208
+  "/usr/share/emacs/26.3+gg1+1.20190826.055900.rc51/etc/NEWS"
+  "NEWS"
+  'outline-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode view-mode)
+  52
+  '(nil nil)
+  t
+  nil
+  '((buffer-display-time 24087 59402 677881 694000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/native/cmds/installd/InstalldNativeService.h"
+  "InstalldNativeService.h"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  9629
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24087 19506 927485 459000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/sepolicy/private/compat/29.0/29.0.cil"
+  "29.0.cil"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  25050
+  '(243 nil)
+  nil
+  nil
+  '((buffer-display-time 24086 65287 423572 554000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (243 243 243 243 243))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/sepolicy/private/compat/29.0/29.0.compat.cil"
+  "29.0.compat.cil"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24086 64431 337396 371000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "installd"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  301
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/frameworks/native/cmds/installd/")
+  '((buffer-display-time 24086 47189 365167 505000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "cmds"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  799
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/frameworks/native/cmds/")
+  '((buffer-display-time 24086 47178 333950 12000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "native"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  618
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/frameworks/native/")
+  '((buffer-display-time 24086 47176 320919 721000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "29.0"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  368
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/system/sepolicy/private/compat/29.0/")
+  '((buffer-display-time 24086 18591 587989 159000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "compat"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  253
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/system/sepolicy/prebuilts/api/29.0/private/compat/")
+  '((buffer-display-time 24086 18436 635328 753000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/sepolicy/prebuilts/api/29.0/private/compat/28.0/28.0.cil"
+  "28.0.cil"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  21737
+  '(68408 nil)
+  nil
+  nil
+  '((buffer-display-time 24086 18419 533306 28000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (68408 21737 21737))))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/system/sepolicy/prebuilts/api/29.0/private/compat/28.0/28.0.ignore.cil"
+  "28.0.ignore.cil"
+  'fundamental-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  2461
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24086 18217 909373 643000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "28.0"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  318
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/system/sepolicy/prebuilts/api/29.0/private/compat/28.0/")
+  '((buffer-display-time 24086 17995 484457 176000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "rootdir"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  983
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/system/core/rootdir/")
+  '((buffer-display-time 24086 15889 882462 264000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/libcore/ojluni/src/main/java/java/io/UnixFileSystem.java"
+  "UnixFileSystem.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  4985
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24086 14444 726487 457000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/cts/tests/app/AndroidManifest.xml"
+  "AndroidManifest.xml"
+  'nxml-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode which-key-mode)
+  351
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24085 54787 966336 593000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/ssd-extra/android/master/frameworks/base/media/tests/MediaFrameworkTest/src/com/android/mediaframeworktest/unit/MediaFileTest.java"
+  "MediaFileTest.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode linum-mode company-mode column-enforce-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  3846
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24084 44935 718461 262000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "vold"
+  'dired-mode
+  '(global-auto-revert-mode linum-mode company-mode ivy-mode helm-mode helm-gtags-mode which-key-mode)
+  281
+  '(nil nil)
+  t
+  '("/usr/local/ssd-extra/android/master/system/vold/")
+  '((buffer-display-time 24084 33266 64081 808000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/google/home/zezeozue/Downloads/pavel.txt"
+  "pavel.txt"
+  'text-mode
+  '(global-auto-revert-mode company-mode ivy-mode helm-mode which-key-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24108 23445 758951 693000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/google/home/zezeozue/scratch/logcat (1).txt"
+  "logcat (1).txt"
+  'text-mode
+  '(global-auto-revert-mode company-mode ivy-mode helm-mode which-key-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24108 23438 190491 454000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/google/home/zezeozue/scratch/logcat (2).txt"
+  "logcat (2).txt"
+  'text-mode
+  '(global-auto-revert-mode company-mode ivy-mode helm-mode which-key-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24108 23438 101165 314000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/google/home/zezeozue/scratch/logcat (3).txt"
+  "logcat (3).txt"
+  'text-mode
+  '(global-auto-revert-mode company-mode ivy-mode helm-mode which-key-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24108 23438 143336 392000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/google/home/zezeozue/scratch/crash.txt"
+  "crash.txt"
+  'text-mode
+  '(global-auto-revert-mode company-mode ivy-mode helm-mode which-key-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24120 32690 713080 963000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/google/home/zezeozue/scratch/l5.txt"
+  "l5.txt"
+  'text-mode
+  '(global-auto-revert-mode company-mode ivy-mode helm-mode which-key-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24150 52146 149127 927000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/google/home/zezeozue/scratch/l8"
+  "l8"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode ivy-mode helm-mode which-key-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24150 52139 773117 673000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/google/home/zezeozue/scratch/log.txt"
+  "log.txt"
+  'text-mode
+  '(global-auto-revert-mode company-mode ivy-mode helm-mode which-key-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24150 52135 987992 469000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/google/home/zezeozue/Downloads/logcat-DialtoneTest-aaaTestSampleBackgroundTasksAllAtOnce.txt"
+  "logcat-DialtoneTest-aaaTestSampleBackgroundTasksAllAtOnce.txt"
+  'text-mode
+  '(global-auto-revert-mode company-mode ivy-mode helm-mode which-key-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24150 52135 613767 708000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/google/home/zezeozue/Downloads/lc1.txt"
+  "lc1.txt"
+  'text-mode
+  '(global-auto-revert-mode company-mode ivy-mode helm-mode which-key-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24150 52134 154993 452000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/google/home/zezeozue/Downloads/logcat-GeneralSettingsTest-testGeneralSettingsPage.txt"
+  "logcat-GeneralSettingsTest-testGeneralSettingsPage.txt"
+  'text-mode
+  '(global-auto-revert-mode company-mode ivy-mode helm-mode which-key-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24150 52132 1349 252000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+

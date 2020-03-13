@@ -1,0 +1,14 @@
+/usr/local/ssd/android/master/cts/hostsidetests/os/src/android/os/cts/PowerManagerTests.java
+/tmp/#!usr!local!ssd!android!master!cts!hostsidetests!os!src!android!os!cts!PowerManagerTests.java#
+/usr/local/ssd/android/master/cts/hostsidetests/os/src/android/os/cts/ProcfsHostTests.java
+/tmp/#!usr!local!ssd!android!master!cts!hostsidetests!os!src!android!os!cts!ProcfsHostTests.java#
+/usr/local/ssd/android/master/cts/tests/tests/os/src/android/os/cts/PowerManagerTest.java
+/tmp/#!usr!local!ssd!android!master!cts!tests!tests!os!src!android!os!cts!PowerManagerTest.java#
+/usr/local/ssd/android/master/cts/hostsidetests/os/Android.mk
+/tmp/#!usr!local!ssd!android!master!cts!hostsidetests!os!Android.mk#
+/usr/local/ssd/android/master/cts/hostsidetests/os/test-apps/PowerManagerTestApp/Android.mk
+/tmp/#!usr!local!ssd!android!master!cts!hostsidetests!os!test-apps!PowerManagerTestApp!Android.mk#
+/usr/local/ssd/android/master/cts/hostsidetests/os/test-apps/ProcfsTestApp/Android.mk
+/tmp/#!usr!local!ssd!android!master!cts!hostsidetests!os!test-apps!ProcfsTestApp!Android.mk#
+/usr/local/ssd/android/master/cts/hostsidetests/os/test-apps/PowerManagerTestApp/src/android/os/powermanager/WakeLockTest.java
+/tmp/#!usr!local!ssd!android!master!cts!hostsidetests!os!test-apps!PowerManagerTestApp!src!android!os!powermanager!WakeLockTest.java#
