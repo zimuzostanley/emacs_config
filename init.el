@@ -1,222 +1,183 @@
-;;; Emacs is not a package manager, and here we load its package manager!
-
+;; Initialize package sources
 (require 'package)
-(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                         ("marmalade" . "https://marmalade-repo.org/packages/")
-                         ("melpa" . "http://melpa.milkbox.net/packages/")
-))
+
+;; Add MELPA repository
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+
+;; Initialize package system
 (package-initialize)
 
-;;(desktop-save-mode 1)
-(global-linum-mode t)
-(setq tramp-default-method "ssh")
+;; Refresh package contents on first load
+(unless package-archive-contents
+  (package-refresh-contents))
 
-;;; Define Packages to check for on startup
-(defvar required-packages
-  '(
-    magit
-    auto-complete
-    yasnippet
-    flycheck
-    web-mode
-    ag
-    projectile
-    perspective
-    persp-projectile
-    exec-path-from-shell
-    jedi
-    auctex
-    auto-complete-auctex
-    typescript
-    tss
-    yaxception ;; Typescript dependency
-  ) "a list of packages to ensure are installed at launch.")
+;; Install use-package if not already installed
+(unless (package-installed-p 'use-package)
+  (package-install 'use-package))
 
-;;; method to check if all packages are installed
-(require 'cl)
-(defun packages-installed-p ()
-  (loop for p in required-packages
-        when (not (package-installed-p p)) do (return nil)
-        finally (return t)))
+(require 'use-package)
+(setq use-package-always-ensure t)
 
-;;; if not all packages are installed, check one by one and install the missing ones.
-(unless (packages-installed-p)
-  ; check for new packages (package versions)
-  (message "%s" "Emacs is now refreshing its package database...")
-  (package-refresh-contents)
-  (message "%s" " done.")
-  ; install the missing packages
-  (dolist (p required-packages)
-    (when (not (package-installed-p p))
-      (package-install p))))
+(use-package which-key
+  :init
+  (which-key-mode)
+  :config
+  (setq which-key-idle-delay 0.3)          ; Show keys after 0.3 seconds
+  (setq which-key-popup-type 'minibuffer)  ; Show in minibuffer
+  (setq which-key-show-early-on-C-h t)     ; Show immediately for C-h
+  (setq which-key-side-window-location 'bottom))
 
-(load-theme 'tango-dark t)
+;; Install and configure Ivy
+(use-package ivy
+  :config
+  (ivy-mode 1)
+  (setq ivy-use-virtual-buffers t)
+  (setq ivy-count-format "(%d/%d) ")
+  :bind
+  (("C-x b" . ivy-switch-buffer)
+   ("C-c v" . ivy-push-view)
+   ("C-c V" . ivy-pop-view)))
 
-;; Add load-path
-(add-to-list 'load-path "~/.emacs.d/lib")
+;; Install and configure Counsel (adds Ivy-powered versions of common commands)
+(use-package counsel
+  :after ivy
+  :config (counsel-mode 1)
+  :bind
+  (("M-x" . counsel-M-x)
+   ("C-x C-f" . counsel-find-file)
+   ("C-c C-r" . counsel-recentf)
+   ("C-x f" . counsel-fzf)
+   ("C-c g" . counsel-git)
+   ("C-c j" . counsel-git-grep)))
 
-;; Set PATH, MANPATH and exec-path from shell to emacs
-;; Necessary for OSX
-(when (memq window-system '(mac ns))
-  (exec-path-from-shell-initialize))
+;; Install and configure Swiper
+(use-package swiper
+  :after ivy
+  :bind
+  (("C-s" . swiper)
+   ("C-r" . swiper-backward)))
 
-;; projectile for project management
-(require 'projectile)
-(projectile-global-mode)
+;; Some basic quality of life settings
+(setq-default
+ inhibit-startup-screen t    ; Disable startup screen
+ make-backup-files nil       ; Disable backup files
+ auto-save-default nil)      ; Disable auto save
 
+;; Enable line numbers
+(global-display-line-numbers-mode)
 
-;; perspective for switching workspaces
-(persp-mode)
-(require 'persp-projectile)
-(define-key projectile-mode-map (kbd "C-c p w") 'projectile-persp-switch-project)
-
-;;Copy without selection
-(defun get-point (symbol &optional arg)
-  "get the point"
-  (funcall symbol arg)
-  (point)
-  )
-
-(defun copy-thing (begin-of-thing end-of-thing &optional arg)
-  "copy thing between beg & end into kill ring"
-  (save-excursion
-    (let ((beg (get-point begin-of-thing 1))
-	  (end (get-point end-of-thing arg)))
-      (copy-region-as-kill beg end)))
-  )
-
-(defun paste-to-mark(&optional arg)
-  "Paste things to mark, or to the prompt in shell-mode"
-  (let ((pasteMe 
-     	 (lambda()
-     	   (if (string= "shell-mode" major-mode)
-	       (progn (comint-next-prompt 25535) (yank))
-	     (progn (goto-char (mark)) (yank) )))))
-    (if arg
-	(if (= arg 1)
-	    nil
-	  (funcall pasteMe))
-      (funcall pasteMe))
-    ))
-
-
-
-(defun copy-word (&optional arg)
-  "Copy words at point into kill-ring"
-  (interactive "P")
-  (copy-thing 'backward-word 'forward-word arg)
-  ;;(paste-to-mark arg)
-  )
-
-(global-set-key (kbd "C-c w")         (quote copy-word))
-
-(defun copy-line (&optional arg)
-  "Save current line into Kill-Ring without mark the line "
-  (interactive "P")
-  (copy-thing 'beginning-of-line 'end-of-line arg)
-  ;(paste-to-mark arg)
-  )
-
-(global-set-key (kbd "C-c l")         (quote copy-line))
-
-;; turn on automatic bracket insertion by pairs. New in emacs 24
-(electric-pair-mode 1)
-
-;; turn on highlight matching brackets when cursor is on one
+;; Show matching parentheses
 (show-paren-mode 1)
 
-;; Set re-builder environment to string by default
-(require 're-builder)
-(setq reb-re-syntax 'string)
+(electric-pair-mode 1)
 
-;; Turn on snippets
-(require 'yasnippet)
-(setq yas-snippet-dirs '("~/.emacs.d/snippets"))
-(yas-global-mode t)
+;; Basic clipboard settings
+(setq select-enable-clipboard t)
+(setq select-enable-primary t)
 
-;; Remove Yasnippet's default tab key binding
-(define-key yas-minor-mode-map (kbd "<tab>") nil)
-(define-key yas-minor-mode-map (kbd "TAB") nil)
-;; Set Yasnippet's key binding to shift+tab
-(define-key yas-minor-mode-map (kbd "<backtab>") 'yas-expand)
+;; Install and enable xclip for terminal mode
+(unless (package-installed-p 'xclip)
+  (package-refresh-contents)
+  (package-install 'xclip))
 
-;; Use spaces not tabs
-(setq indent-tabs-mode nil)
+(require 'xclip)
+(xclip-mode 1)
 
-(require 'auto-complete-config)
-;;(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
-(ac-config-default)
-(global-auto-complete-mode t)
+;; Enable recent files mode
+(recentf-mode 1)
+(setq recentf-max-menu-items 25)
+(setq recentf-max-saved-items 25)
 
+(use-package typescript-mode
+  :mode "\\.ts\\'")
 
-;; Retain indent on paste
-(dolist (command '(yank yank-pop))
-   (eval `(defadvice ,command (after indent-region activate)
-            (and (not current-prefix-arg)
-                 (member major-mode '(emacs-lisp-mode lisp-mode
-                                                      js-mode    scheme-mode
-                                                      haskell-mode    ruby-mode
-                                                      rspec-mode      python-mode
-                                                      c-mode          c++-mode
-                                                      objc-mode       latex-mode
-                                                      plain-tex-mode))
-                 (let ((mark-even-if-inactive transient-mark-mode))
-                   (indent-region (region-beginning) (region-end) nil))))))
+(use-package python-mode
+  :hook (python-mode . lsp-deferred)
+  :custom
+  ;; Use python3 by default
+  (python-shell-interpreter "python3"))
 
+;; Update LSP mode configuration to include Python
+(use-package lsp-mode
+  :init
+  (setq lsp-keymap-prefix "C-c l")
+  :hook
+  ((c-mode . lsp)
+   (c++-mode . lsp)
+   (typescript-mode . lsp)
+   (python-mode . lsp-deferred))  ; Add Python hook
+  :commands (lsp lsp-deferred)
+  :config
+  ;; Performance tweaks for LSP
+  (setq gc-cons-threshold 100000000)
+  (setq read-process-output-max (* 1024 1024))
+  (setq lsp-idle-delay 0.500)
+  ;; Configure pyright
+  (setq lsp-pyright-use-library-code-for-types t
+        lsp-pyright-auto-import-completions t
+        lsp-pyright-auto-search-paths t))
 
-;; web-mode
-(require 'web-mode)
-(add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.js?\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.json?\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.css?\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.php?\\'" . web-mode))
-(setq web-mode-engines-alist
-      '(("mustache" . "\\.html\\'"))
-      )
+(defun linux-kernel-coding-style ()
+  "Apply Linux kernel coding style"
+  (interactive)
+  (setq-local tab-width 8)
+  (setq-local indent-tabs-mode t)
+  (setq-local c-basic-offset 8)
+  (c-set-style "linux"))
 
-;; Load auctex
-(load "auctex.el" nil t t)
-(load "auto-complete-auctex.el" nil t t)
+;; Apply kernel style for kernel files
+(add-hook 'c-mode-hook
+          (lambda ()
+            (when (string-match "/linux" (buffer-file-name))
+              (linux-kernel-coding-style))))
 
-
-;; store all backup and autosave files in tmp directory of os
-(setq backup-directory-alist
-      `((".*" . ,temporary-file-directory)))
-(setq auto-save-file-name-transforms
-      `((".*" ,temporary-file-directory t)))
-
-
-;; jedi config
-(add-hook 'python-mode-hook 'jedi:setup)
-(setq jedi:complete-on-dot t)                 ; optional
-;; Type:
-;;     M-x el-get-install RET jedi RET
-;;     M-x jedi:install-server RET
-;; Then open Python file.
-
-;; Yaxception. Typescript dependency
-(require 'yaxception)
-
-;; Typescript syntax check/completion
-(require 'typescript)
-(add-to-list 'auto-mode-alist '("\\.ts\\'" . typescript-mode))
-
-(require 'tss)
-(setq tss-popup-help-key "C-:")
-(setq tss-jump-to-definition-key "C->")
-(setq tss-implement-definition-key "C-c i")
-
-;; Make config suit for you. About the config item, eval the following sexp.
-;; (customize-group "tss")
-
-;; Do setting recommemded configuration
-(tss-config-default)
+;; LSP UI for additional features
+(use-package lsp-ui
+  :commands lsp-ui-mode
+  :config
+  (setq lsp-ui-doc-enable t             ; Enable documentation popups
+        lsp-ui-doc-show-with-cursor t   ; Show doc when cursor moves
+        lsp-ui-doc-delay 0.5            ; Delay before showing doc
+        lsp-ui-doc-position 'at-point   ; Show doc at point (alternatives: 'top 'bottom)
+        lsp-ui-doc-max-height 30        ; Max height of doc window
+        lsp-ui-peek-enable t            ; Enable peek feature
+        lsp-ui-sideline-enable t        ; Enable sideline info
+        lsp-ui-sideline-show-diagnostics t  ; Show diagnostics in sideline
+        lsp-ui-sideline-show-code-actions t) ; Show code actions in sideline
+  :bind
+  (:map lsp-ui-mode-map
+        ("M-." . lsp-ui-peek-find-definitions)     ; Peek definition
+        ("M-?" . lsp-ui-peek-find-references)      ; Peek references
+        ("C-c i" . lsp-ui-imenu)                   ; Symbol overview
+        ("C-c d" . lsp-ui-doc-show)))
 
 
-;; Markdown mode
-(autoload 'markdown-mode "markdown-mode"
-  "Major mode for editing files" t)
-(add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
-(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
-(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+;; Install and configure Company mode for completion
+(use-package company
+  :after lsp-mode
+  :config
+  (global-company-mode 1)
+  (setq company-idle-delay 0.1          ; Delay before showing suggestions
+        company-minimum-prefix-length 1  ; Show suggestions after typing one character
+        company-selection-wrap-around t  ; Wrap around to top when reaching bottom of suggestions
+        company-tooltip-align-annotations t ; Align annotations to the right
+        company-require-match nil)       ; Don't require an exact match
+  :bind
+  (:map company-active-map
+        ("C-n" . company-select-next)
+        ("C-p" . company-select-previous)
+        ("M-n" . company-select-next)
+        ("M-p" . company-select-previous)))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   '(python-mode typescript-mode xclip which-key company lsp-ui lsp-mode counsel ivy)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
