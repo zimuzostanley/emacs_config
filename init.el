@@ -112,10 +112,10 @@
   ("C-c b s" . bm-show)
   ("C-c b a" . bm-show-all)))
 
-;; (use-package magit
-;;   :ensure t
-;;   :init
-;;   :bind ("C-x g" . magit-status))
+(use-package magit
+  :ensure t
+  :init
+  :bind ("C-x g" . magit-status))
 
 ;; Enable recent files mode
 (recentf-mode 1)
