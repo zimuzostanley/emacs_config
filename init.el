@@ -27,6 +27,14 @@
   (setq which-key-show-early-on-C-h t)     ; Show immediately for C-h
   (setq which-key-side-window-location 'bottom))
 
+;; Install monokai theme
+(use-package monokai-theme)
+
+;; Load theme
+(load-theme 'monokai t)
+
+(menu-bar-mode -1)
+
 ;; Install and configure Ivy
 (use-package ivy
   :config
@@ -48,7 +56,18 @@
    ("C-c C-r" . counsel-recentf)
    ("C-x f" . counsel-fzf)
    ("C-c g" . counsel-git)
+   ("C-c p" . counsel-ag)
    ("C-c j" . counsel-git-grep)))
+
+;; Install the rg package
+(use-package rg
+  :ensure t
+  :config
+  (rg-enable-default-bindings))  ; Sets up default keybindings (C-c s)
+
+(use-package deadgrep
+  :ensure t
+  :bind ("C-c h" . deadgrep))
 
 ;; Install and configure Swiper
 (use-package swiper
@@ -83,6 +102,21 @@
 (require 'xclip)
 (xclip-mode 1)
 
+(use-package bm
+ :ensure t
+ :init 
+ :bind
+ (("C-c b t" . bm-toggle)
+  ("C-c b n" . bm-next)
+  ("C-c b p" . bm-previous)
+  ("C-c b s" . bm-show)
+  ("C-c b a" . bm-show-all)))
+
+;; (use-package magit
+;;   :ensure t
+;;   :init
+;;   :bind ("C-x g" . magit-status))
+
 ;; Enable recent files mode
 (recentf-mode 1)
 (setq recentf-max-menu-items 25)
@@ -97,14 +131,40 @@
   ;; Use python3 by default
   (python-shell-interpreter "python3"))
 
+(use-package lsp-pyright
+  :ensure t
+  :custom (lsp-pyright-langserver-command "pyright") ;; or basedpyright
+  :hook (python-mode . (lambda ()
+                          (require 'lsp-pyright)
+                          (lsp))))  ; or lsp-deferred
+
+(use-package web-mode
+  :ensure t
+  :mode (("\\.js\\'" . web-mode)
+         ("\\.html\\'" . web-mode))
+  :config
+  (setq web-mode-markup-indent-offset 2)
+  (setq web-mode-code-indent-offset 2)
+  (setq web-mode-css-indent-offset 2))
+
+(use-package typescript-mode
+  :ensure t)
+
+(use-package rjsx-mode
+  :ensure t
+  :mode (("\\.jsx\\'" . rjsx-mode)
+	 ("\\.tsx\\'" . web-mode)))
+
 ;; Update LSP mode configuration to include Python
 (use-package lsp-mode
   :init
   (setq lsp-keymap-prefix "C-c l")
   :hook
-  ((c-mode . lsp)
-   (c++-mode . lsp)
-   (typescript-mode . lsp)
+  ((c-mode . lsp-deferred)
+   (c++-mode . lsp-deferred)
+   (typescript-mode . lsp-deferred)
+   (web-mode . lsp-deferred)
+   (rjsx-mode . lsp-deferred)
    (python-mode . lsp-deferred))  ; Add Python hook
   :commands (lsp lsp-deferred)
   :config
@@ -116,6 +176,26 @@
   (setq lsp-pyright-use-library-code-for-types t
         lsp-pyright-auto-import-completions t
         lsp-pyright-auto-search-paths t))
+
+;; Rust configuration
+(use-package rustic
+  :ensure
+  :bind (:map rustic-mode-map
+              ("M-j" . lsp-ui-imenu)
+              ("M-?" . lsp-find-references)
+              ("C-c C-c l" . flycheck-list-errors)
+              ("C-c C-c a" . lsp-execute-code-action)
+              ("C-c C-c r" . lsp-rename)
+              ("C-c C-c q" . lsp-workspace-restart))
+  :config
+  ;; Comment/uncomment these three lines to toggle debug prints
+  (setq rustic-format-on-save t)
+  (setq rustic-lsp-server 'rust-analyzer)
+  (setq rustic-analyzer-command '("rust-analyzer")))
+
+;; Optional: For better error checking
+(use-package flycheck-rust
+  :config (add-hook 'flycheck-mode-hook #'flycheck-rust-setup))
 
 (defun linux-kernel-coding-style ()
   "Apply Linux kernel coding style"
@@ -130,6 +210,9 @@
           (lambda ()
             (when (string-match "/linux" (buffer-file-name))
               (linux-kernel-coding-style))))
+
+(use-package kconfig-mode
+  :ensure t)
 
 ;; LSP UI for additional features
 (use-package lsp-ui
@@ -174,7 +257,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(python-mode typescript-mode xclip which-key company lsp-ui lsp-mode counsel ivy)))
+   '(magit bm monokai-theme kconfig-mode rjsx-mode web-mode flycheck-rust rustic deadgrep rg lsp-pyright python-mode typescript-mode xclip which-key company lsp-ui lsp-mode counsel ivy)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
