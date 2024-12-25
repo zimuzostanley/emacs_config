@@ -214,6 +214,9 @@
 (use-package kconfig-mode
   :ensure t)
 
+(use-package vterm
+  :ensure t)
+
 ;; LSP UI for additional features
 (use-package lsp-ui
   :commands lsp-ui-mode
