@@ -41,10 +41,10 @@
   (setq which-key-side-window-location 'bottom))
 
 ;; Install monokai theme
-(use-package monokai-theme)
+;;(use-package monokai-theme)
 
 ;; Load theme
-(load-theme 'monokai t)
+;;(load-theme 'monokai t)
 
 (menu-bar-mode -1)
 (setq indent-tabs-mode nil)
@@ -146,6 +146,19 @@
 
 (require 'xclip)
 (xclip-mode 1)
+
+(unless (display-graphic-p)
+  (defun osc52-copy (string &optional target)
+    (let* ((target (or target "clipboard"))
+           (str (base64-encode-string string t))
+           (data (concat "\e]52;" target ";" str "\e\\"))
+           (max-size 100000))
+      (when (> (length data) max-size)
+        (error "Selection too long to copy to terminal (%d vs %d)"
+               (length data) max-size))
+      (send-string-to-terminal data)))
+
+  (setq interprogram-cut-function 'osc52-copy))
 
 (use-package bm
  :ensure t
@@ -382,102 +395,64 @@
   ;; Optional: Add a key binding to manually trigger vlf-mode
   :bind (("C-c v" . vlf-mode)))
 
-;; (Require 'helm-gtags)
-;; ;;; Enable helm-gtags-mode
-;; (add-hook 'c-mode-hook 'helm-gtags-mode)
-;; (add-hook 'java-mode-hook 'helm-gtags-mode)
-;; (add-hook 'c++-mode-hook 'helm-gtags-mode)
+;; ;; Logcat highlight
+;; (defface logcat-error
+;;   '((t :foreground "#FF6B68" ))
+;;   "Face for global variables."
+;;   :group 'logcat )
+;; (defvar logcat-error 'logcat-error)
 
-;; ;; key bindings
-;; (with-eval-after-load 'helm-gtags
-;;   (define-key helm-gtags-mode-map (kbd "M-t") 'helm-gtags-find-tag)
-;;   (define-key helm-gtags-mode-map (kbd "M-.") 'helm-gtags-find-tag)
-;;   (define-key helm-gtags-mode-map (kbd "M-r") 'helm-gtags-find-rtag)
-;;   (define-key helm-gtags-mode-map (kbd "M-?") 'helm-gtags-find-rtag)
-;;   (define-key helm-gtags-mode-map (kbd "M-,") 'helm-gtags-pop-stack))
-(use-package jdecomp
-  :ensure t
-  :config
-  (jdecomp-mode 1)
-  (setq jdecomp-decompiler-paths
-        '((cfr . "~/Downloads/cfr-0.152.jar"))))
+;; (defface logcat-warn
+;;   '((t :foreground "#BBB529" ))
+;;   "Face for global variables."
+;;   :group 'logcat )
+;; (defvar logcat-warn 'logcat-warn)
 
-;; Android
-(defun android-aosp ()
-    "Open Android AOSP root dir"
-    (interactive)
-    (find-file "/usr/local/ssd/extra/android/aosp"))
+;; (defface logcat-info
+;;   '((t :foreground "#6A8759" ))
+;;   "Face for global variables."
+;;   :group 'logcat)
+;; (defvar logcat-info 'logcat-info)
 
-(defun android-master ()
-    "Open Android master root dir"
-    (interactive)
-    (find-file "/usr/local/ssd/extra/android/master"))
+;; (defface logcat-debug
+;;   '((t :foreground "#6897BB" ))
+;;   "Face for global variables."
+;;   :group 'logcat )
+;; (defvar logcat-debug 'logcat-debug)
 
-(defun android-main ()
-    "Open Android master root dir"
-    (interactive)
-    (find-file "/usr/local/ssd/extra/android/main"))
-
-(global-set-key (kbd "C-x j m") 'android-main)
-
-;; Logcat highlight
-(defface logcat-error
-  '((t :foreground "#FF6B68" ))
-  "Face for global variables."
-  :group 'logcat )
-(defvar logcat-error 'logcat-error)
-
-(defface logcat-warn
-  '((t :foreground "#BBB529" ))
-  "Face for global variables."
-  :group 'logcat )
-(defvar logcat-warn 'logcat-warn)
-
-(defface logcat-info
-  '((t :foreground "#6A8759" ))
-  "Face for global variables."
-  :group 'logcat)
-(defvar logcat-info 'logcat-info)
-
-(defface logcat-debug
-  '((t :foreground "#6897BB" ))
-  "Face for global variables."
-  :group 'logcat )
-(defvar logcat-debug 'logcat-debug)
+;; ;; (setq logcat-highlights
+;; ;;       '(("^.* (E|c0) .*$" . logcat-error)
+;; ;;         ("^.* (W|c1) .*$" . logcat-warn)
+;; ;;         ("^.* (I|c2) .*$" . logcat-info)
+;; ;;         ("^.* (D|c3) .*$" . logcat-debug)))
 
 ;; (setq logcat-highlights
-;;       '(("^.* (E|c0) .*$" . logcat-error)
-;;         ("^.* (W|c1) .*$" . logcat-warn)
-;;         ("^.* (I|c2) .*$" . logcat-info)
-;;         ("^.* (D|c3) .*$" . logcat-debug)))
+;;       '(("^.* E .*$" . logcat-error)
+;;         ("^.* W .*$" . logcat-warn)
+;;         ("^.* I .*$" . logcat-info)
+;;         ("^.* D .*$" . logcat-debug)))
 
-(setq logcat-highlights
-      '(("^.* E .*$" . logcat-error)
-        ("^.* W .*$" . logcat-warn)
-        ("^.* I .*$" . logcat-info)
-        ("^.* D .*$" . logcat-debug)))
+;; (define-derived-mode adb-logcat fundamental-mode "logcat"
+;;   "major mode for adb logcat"
+;;   (visual-line-mode)
+;;   (setq font-lock-defaults `(logcat-highlights t)))
 
-(define-derived-mode adb-logcat fundamental-mode "logcat"
-  "major mode for adb logcat"
-  (visual-line-mode)
-  (setq font-lock-defaults `(logcat-highlights t)))
+;; (defun bugreport ()
+;;   (interactive)
+;;   (visual-line-mode)
+;;   (fundamental-mode)
+;;   (buffer-disable-undo)
+;;   (font-lock-mode -1)
+;;   (setq buffer-read-only t))
 
-(defun bugreport ()
-  (interactive)
-  (visual-line-mode)
-  (fundamental-mode)
-  (buffer-disable-undo)
-  (font-lock-mode -1)
-  (setq buffer-read-only t))
-
-(rg-define-search search-bugreport
-  "Search bugreport"
-  :query "was the duration of"
-  :format literal
-  :files "everything"
-  :flags ("--text")
-  :dir current
-  :menu ("Search" "b" "Bugreport"))
+;; (rg-define-search search-bugreport
+;;   "Search bugreport"
+;;   :query "was the duration of"
+;;   :format literal
+;;   :files "everything"
+;;   :flags ("--text")
+;;   :dir current
+;;   :menu ("Search" "b" "Bugreport"))
 
 (setq gc-cons-threshold 10000000)
 
@@ -508,8 +483,8 @@
 (global-set-key (kbd "C-c w")         (quote copy-word))
 (global-set-key (kbd "C-c l")         (quote copy-line))
 
-(global-set-key (kbd "M-B") 'bugreport)
-(global-set-key (kbd "M-l") 'adb-logcat)
+;;(global-set-key (kbd "M-B") 'bugreport)
+;;(global-set-key (kbd "M-l") 'adb-logcat)
 
 (use-package diff-hl
   :ensure t
@@ -665,5 +640,4 @@
   :bind
   (:map company-active-map
         ("C-n" . company-select-next)
-        ("C-p" . company
-
+        ("C-p" . company)))
