@@ -18,6 +18,19 @@
 (require 'use-package)
 (setq use-package-always-ensure t)
 
+(use-package super-save
+  :ensure t
+  :custom
+  (super-save-auto-save-when-idle t)
+  :config
+  (super-save-mode +1))
+
+(global-auto-revert-mode 1)
+(defun revert-buffer-no-confirm ()
+    "Revert buffer without confirmation."
+    (interactive)
+    (revert-buffer t t))
+
 (use-package which-key
   :init
   (which-key-mode)
@@ -34,6 +47,15 @@
 (load-theme 'monokai t)
 
 (menu-bar-mode -1)
+(setq indent-tabs-mode nil)
+(setq whitespace-style '(tabs newline))
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+(setq show-trailing-whitespace 'trailing-whitespace)
+(setq indicate-empty-lines t)
+
+;; (require 'google)
+;; (require 'google-java-format)
+;; (require 'google-diformat)
 
 ;; Install and configure Ivy
 (use-package ivy
@@ -52,12 +74,29 @@
   :config (counsel-mode 1)
   :bind
   (("M-x" . counsel-M-x)
-   ("C-x C-f" . counsel-find-file)
+   ("C-x f" . fzf-git)
+   ("C-x d" . counsel-find-file)
    ("C-c C-r" . counsel-recentf)
-   ("C-x f" . counsel-fzf)
-   ("C-c g" . counsel-git)
-   ("C-c p" . counsel-ag)
-   ("C-c j" . counsel-git-grep)))
+   ("C-x p" . counsel-ag)
+   ("C-c p" . counsel-git-grep)))
+
+(use-package treemacs
+ :ensure t
+ :bind
+ (("C-c t" . treemacs)
+  ("M-0" . treemacs-select-window))
+ :config
+ (treemacs-follow-mode t)
+ (treemacs-filewatch-mode t)
+ (treemacs-git-mode 'simple)
+ :custom
+ (treemacs-width 35)
+ (treemacs-position 'left))
+
+(use-package fzf
+  :ensure t
+  :bind
+  ("C-x C-f" . fzf))
 
 ;; Install the rg package
 (use-package rg
@@ -73,8 +112,11 @@
 (use-package swiper
   :after ivy
   :bind
-  (("C-s" . swiper)
-   ("C-r" . swiper-backward)))
+  (("C-s" . counsel-grep-or-swiper)
+   ("C-r" . counsel-rg)))
+
+(setq counsel-grep-base-command
+ "rg -i --no-heading --line-number --color never '%s' %s")
 
 ;; Some basic quality of life settings
 (setq-default
@@ -87,6 +129,9 @@
 
 ;; Show matching parentheses
 (show-paren-mode 1)
+
+(setq-default indent-tabs-mode nil)
+(setq-default default-tab-width 4)
 
 (electric-pair-mode 1)
 
@@ -104,7 +149,7 @@
 
 (use-package bm
  :ensure t
- :init 
+ :init
  :bind
  (("C-c b t" . bm-toggle)
   ("C-c b n" . bm-next)
@@ -115,87 +160,129 @@
 (use-package magit
   :ensure t
   :init
-  :bind ("C-x g" . magit-status))
+  :bind
+  (("C-x g" . magit-status)
+   ("C-x G" . magit-blame)
+   ("C-x L" . magit-log-buffer-file))
+)
 
 ;; Enable recent files mode
 (recentf-mode 1)
 (setq recentf-max-menu-items 25)
 (setq recentf-max-saved-items 25)
 
+(defun my-cpp-mode-setup ()
+  "Setup for C++ mode"
+  (setq-local tab-width 4)
+  (setq-local c-basic-offset 4)
+  (setq indent-tabs-mode nil)
+  (setq c-default-style "stroustrup"))
+
+(add-hook 'c++-mode-hook 'my-cpp-mode-setup)
+
 (use-package typescript-mode
   :mode "\\.ts\\'")
 
 (use-package python-mode
-  :hook (python-mode . lsp-deferred)
   :custom
   ;; Use python3 by default
   (python-shell-interpreter "python3"))
 
-(use-package lsp-pyright
+;; Performance settings
+  ;; Increase read/write timeout
+(setq eglot-connect-timeout 30)
+(setq eglot-sync-connect nil)
+
+;; Configure events to ignore (improves performance)
+(setq eglot-ignored-server-capabilities '(:documentHighlightProvider))
+
+;; Performance optimizations
+(setq eglot-send-changes-idle-time 0.5)
+
+;; Set larger limits for communicating with servers
+(setq eglot-events-buffer-size 0) ; Disable events buffer
+(setq eglot-confirm-server-initiated-edits nil) ; Don't ask to confirm edits
+
+
+;; Basic Eglot setup
+(use-package eglot
   :ensure t
-  :custom (lsp-pyright-langserver-command "pyright") ;; or basedpyright
-  :hook (python-mode . (lambda ()
-                          (require 'lsp-pyright)
-                          (lsp))))  ; or lsp-deferred
+  :hook (
+         (c++-mode . eglot-ensure)
+         (c-mode . eglot-ensure)
 
-(use-package web-mode
+         ;; TypeScript/JavaScript
+         (typescript-mode . eglot-ensure)
+         (typescript-tsx-mode . eglot-ensure)
+         (js-mode . eglot-ensure)
+         (js2-mode . eglot-ensure)
+
+         ;; Rust
+         (rust-mode . eglot-ensure)
+         (rustic-mode . eglot-ensure)
+
+         ;; Python
+         (python-mode . eglot-ensure)
+
+         ;; SCSS/CSS
+         (scss-mode . eglot-ensure)
+         (css-mode . eglot-ensure)
+
+         ;; HTML
+         (html-mode . eglot-ensure)
+         (web-mode . eglot-ensure)
+         )
+
+    ;; Keybindings
+  :bind (:map eglot-mode-map
+              ("M-RET" . eglot-code-actions)
+              ("M-." . xref-find-definitions)
+              ("M-?" . xref-find-references)
+              ("M-," . xref-pop-marker-stack))
+
+  :config
+  ;; Shutdown server when buffer is killed
+  (setq eglot-autoshutdown t)
+
+  ;; Set LSP server paths/configurations
+  (add-to-list 'eglot-server-programs
+               `((typescript-mode typescript-tsx-mode js-mode js2-mode)
+                 . ("typescript-language-server" "--stdio")))
+
+  (add-to-list 'eglot-server-programs
+               '((rust-mode rustic-mode) . ("rust-analyzer")))
+
+  (add-to-list 'eglot-server-programs
+               '(python-mode . ("pyright-langserver" "--stdio")))
+
+  (add-to-list 'eglot-server-programs
+               '((scss-mode css-mode) . ("vscode-css-language-server" "--stdio")))
+
+  (add-to-list 'eglot-server-programs
+               '((html-mode web-mode) . ("vscode-html-language-server" "--stdio")))
+  (add-to-list 'eglot-server-programs
+               `((c-mode c++-mode)
+                 . ("clangd"
+                    "--compile-commands-dir=${workspaceFolder}"
+                    "--clang-tidy"
+                    "--header-insertion=iwyu"
+                    "--completion-style=detailed"
+                    "-j=4"
+                    "--query-driver=/usr/bin/clang"))))
+
+(use-package consult
   :ensure t
-  :mode (("\\.js\\'" . web-mode)
-         ("\\.html\\'" . web-mode))
   :config
-  (setq web-mode-markup-indent-offset 2)
-  (setq web-mode-code-indent-offset 2)
-  (setq web-mode-css-indent-offset 2))
+  ;; Configure xref to use consult
+  (setq xref-show-definitions-function #'consult-xref
+        xref-show-xref-function #'consult-xref))
 
-(use-package typescript-mode
-  :ensure t)
-
-(use-package rjsx-mode
-  :ensure t
-  :mode (("\\.jsx\\'" . rjsx-mode)
-	 ("\\.tsx\\'" . web-mode)))
-
-;; Update LSP mode configuration to include Python
-(use-package lsp-mode
-  :init
-  (setq lsp-keymap-prefix "C-c l")
-  :hook
-  ((c-mode . lsp-deferred)
-   (c++-mode . lsp-deferred)
-   (typescript-mode . lsp-deferred)
-   (web-mode . lsp-deferred)
-   (rjsx-mode . lsp-deferred)
-   (python-mode . lsp-deferred))  ; Add Python hook
-  :commands (lsp lsp-deferred)
-  :config
-  ;; Performance tweaks for LSP
-  (setq gc-cons-threshold 100000000)
-  (setq read-process-output-max (* 1024 1024))
-  (setq lsp-idle-delay 0.500)
-  ;; Configure pyright
-  (setq lsp-pyright-use-library-code-for-types t
-        lsp-pyright-auto-import-completions t
-        lsp-pyright-auto-search-paths t))
-
-;; Rust configuration
-(use-package rustic
-  :ensure
-  :bind (:map rustic-mode-map
-              ("M-j" . lsp-ui-imenu)
-              ("M-?" . lsp-find-references)
-              ("C-c C-c l" . flycheck-list-errors)
-              ("C-c C-c a" . lsp-execute-code-action)
-              ("C-c C-c r" . lsp-rename)
-              ("C-c C-c q" . lsp-workspace-restart))
-  :config
-  ;; Comment/uncomment these three lines to toggle debug prints
-  (setq rustic-format-on-save t)
-  (setq rustic-lsp-server 'rust-analyzer)
-  (setq rustic-analyzer-command '("rust-analyzer")))
-
-;; Optional: For better error checking
-(use-package flycheck-rust
-  :config (add-hook 'flycheck-mode-hook #'flycheck-rust-setup))
+;; Make sure you have the required language servers installed:
+;; - typescript-language-server: npm install -g typescript-language-server typescript
+;; - rust-analyzer: https://rust-analyzer.github.io/manual.html#installation
+;; - pyright: pip install pyright
+;; - vscode-css-language-server: npm install -g vscode-langservers-extracted
+;; - vscode-html-language-server: npm install -g vscode-langservers-extracted
 
 (defun linux-kernel-coding-style ()
   "Apply Linux kernel coding style"
@@ -217,33 +304,360 @@
 (use-package vterm
   :ensure t)
 
-;; LSP UI for additional features
-(use-package lsp-ui
-  :commands lsp-ui-mode
-  :config
-  (setq lsp-ui-doc-enable t             ; Enable documentation popups
-        lsp-ui-doc-show-with-cursor t   ; Show doc when cursor moves
-        lsp-ui-doc-delay 0.5            ; Delay before showing doc
-        lsp-ui-doc-position 'at-point   ; Show doc at point (alternatives: 'top 'bottom)
-        lsp-ui-doc-max-height 30        ; Max height of doc window
-        lsp-ui-peek-enable t            ; Enable peek feature
-        lsp-ui-sideline-enable t        ; Enable sideline info
-        lsp-ui-sideline-show-diagnostics t  ; Show diagnostics in sideline
-        lsp-ui-sideline-show-code-actions t) ; Show code actions in sideline
-  :bind
-  (:map lsp-ui-mode-map
-        ("M-." . lsp-ui-peek-find-definitions)     ; Peek definition
-        ("M-?" . lsp-ui-peek-find-references)      ; Peek references
-        ("C-c i" . lsp-ui-imenu)                   ; Symbol overview
-        ("C-c d" . lsp-ui-doc-show)))
+;; Move to personal
+(global-unset-key (kbd "M-t"))
+(global-unset-key (kbd "M-r"))
 
+(global-set-key "\M-g" 'goto-line)
+(global-set-key (kbd "C-x C-k") 'kill-this-buffer)
+
+(use-package flycheck
+  :ensure t
+  :init
+  (global-flycheck-mode t))
+
+(use-package prettier
+  :ensure t
+  :hook ((typescript-mode js-mode) . prettier-mode))
+
+(use-package helm-gtags
+  :ensure t
+  :bind (("M-t" . helm-gtags-find-tag) ; Better to use other-window version to prevent conflicts
+         ("M-." . helm-gtags-find-tag)
+         ("M-," . helm-gtags-pop-stack)
+         ("M-r" . helm-gtags-find-rtag)
+         ("M-?" . helm-gtags-find-rtag)
+	 ("M-p" . helm-show-kill-ring))
+  :hook ((c-mode . helm-gtags-mode)
+         (c++-mode . helm-gtags-mode)
+         (java-mode . helm-gtags-mode))
+  )
+
+(use-package kotlin-mode
+ :ensure t
+ :mode "\\.kt\\'")
+
+(defun format-typescript-perfetto ()
+  "Format the current typescript file in the Perfetto project."
+  (interactive)
+  (when (and buffer-file-name
+             (or (string= (file-name-extension buffer-file-name) "ts")
+                 (string= (file-name-extension buffer-file-name) "js")
+                 (string= (file-name-extension buffer-file-name) "scss")))
+    (let* ((root-dir (locate-dominating-file default-directory "ui"))
+           (format-script "/usr/local/ssd/extra/android/perfetto/ui/format-sources"))
+      (when root-dir
+        (message "Formatting %s" buffer-file-name)
+        (shell-command (format "%s %s" format-script buffer-file-name))
+        (revert-buffer t t t)))))
+
+(defun setup-typescript-formatting ()
+  "Set up formatting hooks for TypeScript/JavaScript/SCSS files."
+  (when (and buffer-file-name
+             (or (string= (file-name-extension buffer-file-name) "ts")
+                 (string= (file-name-extension buffer-file-name) "js")
+                 (string= (file-name-extension buffer-file-name) "scss")))))
+
+;; Add this hook to relevant major modes
+(add-hook 'typescript-mode-hook 'setup-typescript-formatting)
+(add-hook 'js-mode-hook 'setup-typescript-formatting)
+(add-hook 'js2-mode-hook 'setup-typescript-formatting)
+(add-hook 'web-mode-hook 'setup-typescript-formatting)
+(add-hook 'scss-mode-hook 'setup-typescript-formatting)
+(add-hook 'css-mode-hook 'setup-typescript-formatting)
+
+;; Or bind to a key for manual formatting
+(global-set-key (kbd "C-c f") 'format-typescript-perfetto)
+
+;; Install and configure vlf (View Large Files)
+(use-package vlf
+  :ensure t
+  :config
+  (require 'vlf-setup)
+  ;; Set the size threshold for VLF mode (in bytes)
+  (setq vlf-application-threshold 10000000) ; 1MB threshold
+  ;; Add vlf to file-name-handler-alist
+  (custom-set-variables
+   '(vlf-application-prefer-external nil))
+  ;; Optional: Add a key binding to manually trigger vlf-mode
+  :bind (("C-c v" . vlf-mode)))
+
+;; (Require 'helm-gtags)
+;; ;;; Enable helm-gtags-mode
+;; (add-hook 'c-mode-hook 'helm-gtags-mode)
+;; (add-hook 'java-mode-hook 'helm-gtags-mode)
+;; (add-hook 'c++-mode-hook 'helm-gtags-mode)
+
+;; ;; key bindings
+;; (with-eval-after-load 'helm-gtags
+;;   (define-key helm-gtags-mode-map (kbd "M-t") 'helm-gtags-find-tag)
+;;   (define-key helm-gtags-mode-map (kbd "M-.") 'helm-gtags-find-tag)
+;;   (define-key helm-gtags-mode-map (kbd "M-r") 'helm-gtags-find-rtag)
+;;   (define-key helm-gtags-mode-map (kbd "M-?") 'helm-gtags-find-rtag)
+;;   (define-key helm-gtags-mode-map (kbd "M-,") 'helm-gtags-pop-stack))
+(use-package jdecomp
+  :ensure t
+  :config
+  (jdecomp-mode 1)
+  (setq jdecomp-decompiler-paths
+        '((cfr . "~/Downloads/cfr-0.152.jar"))))
+
+;; Android
+(defun android-aosp ()
+    "Open Android AOSP root dir"
+    (interactive)
+    (find-file "/usr/local/ssd/extra/android/aosp"))
+
+(defun android-master ()
+    "Open Android master root dir"
+    (interactive)
+    (find-file "/usr/local/ssd/extra/android/master"))
+
+(defun android-main ()
+    "Open Android master root dir"
+    (interactive)
+    (find-file "/usr/local/ssd/extra/android/main"))
+
+(global-set-key (kbd "C-x j m") 'android-main)
+
+;; Logcat highlight
+(defface logcat-error
+  '((t :foreground "#FF6B68" ))
+  "Face for global variables."
+  :group 'logcat )
+(defvar logcat-error 'logcat-error)
+
+(defface logcat-warn
+  '((t :foreground "#BBB529" ))
+  "Face for global variables."
+  :group 'logcat )
+(defvar logcat-warn 'logcat-warn)
+
+(defface logcat-info
+  '((t :foreground "#6A8759" ))
+  "Face for global variables."
+  :group 'logcat)
+(defvar logcat-info 'logcat-info)
+
+(defface logcat-debug
+  '((t :foreground "#6897BB" ))
+  "Face for global variables."
+  :group 'logcat )
+(defvar logcat-debug 'logcat-debug)
+
+;; (setq logcat-highlights
+;;       '(("^.* (E|c0) .*$" . logcat-error)
+;;         ("^.* (W|c1) .*$" . logcat-warn)
+;;         ("^.* (I|c2) .*$" . logcat-info)
+;;         ("^.* (D|c3) .*$" . logcat-debug)))
+
+(setq logcat-highlights
+      '(("^.* E .*$" . logcat-error)
+        ("^.* W .*$" . logcat-warn)
+        ("^.* I .*$" . logcat-info)
+        ("^.* D .*$" . logcat-debug)))
+
+(define-derived-mode adb-logcat fundamental-mode "logcat"
+  "major mode for adb logcat"
+  (visual-line-mode)
+  (setq font-lock-defaults `(logcat-highlights t)))
+
+(defun bugreport ()
+  (interactive)
+  (visual-line-mode)
+  (fundamental-mode)
+  (buffer-disable-undo)
+  (font-lock-mode -1)
+  (setq buffer-read-only t))
+
+(rg-define-search search-bugreport
+  "Search bugreport"
+  :query "was the duration of"
+  :format literal
+  :files "everything"
+  :flags ("--text")
+  :dir current
+  :menu ("Search" "b" "Bugreport"))
+
+(setq gc-cons-threshold 10000000)
+
+(defun get-point (symbol &optional arg)
+  "get the point"
+  (funcall symbol arg)
+  (point))
+
+(defun copy-thing (begin-of-thing end-of-thing &optional arg)
+  "Copy thing between beg & end into kill ring."
+  (save-excursion
+    (let ((beg (get-point begin-of-thing 1))
+          (end (get-point end-of-thing arg)))
+      (copy-region-as-kill beg end))))
+
+(defun copy-word (&optional arg)
+      "Copy words at point into kill-ring"
+       (interactive "P")
+       (copy-thing 'backward-word 'forward-word arg)
+       ;;(paste-to-mark arg)
+      )
+ (defun copy-line (&optional arg)
+      "Save current line into Kill-Ring without mark the line "
+       (interactive "P")
+       (copy-thing 'beginning-of-line 'end-of-line arg)
+       )
+
+(global-set-key (kbd "C-c w")         (quote copy-word))
+(global-set-key (kbd "C-c l")         (quote copy-line))
+
+(global-set-key (kbd "M-B") 'bugreport)
+(global-set-key (kbd "M-l") 'adb-logcat)
+
+(use-package diff-hl
+  :ensure t
+  :init
+  (global-diff-hl-mode)
+  (diff-hl-flydiff-mode t)
+  (diff-hl-margin-mode t)
+  (setq diff-hl-draw-borders t)
+  (setq diff-hl-flydiff-delay 0.1)
+  :config
+  ;; Update diff-hl after git operations
+  ;;(add-hook 'magit-post-refresh-hook 'diff-hl-magit-post-refresh)
+  ;; Update diff-hl after saving
+  (add-hook 'after-save-hook #'diff-hl-update))
+
+;; Protobuf mode configuration
+(use-package protobuf-mode
+  :ensure t
+  :mode "\\.proto\\'")
+
+(use-package sqlformat
+  :ensure t)
+
+(defvar import-line-regexp
+  (concat "^import[ \t]+\\([a-zA-Z0-9_]+\\.\\)*"
+          "\\([a-zA-Z0-9_]+\\)[ \t]*;"))
+
+(defun delete-bogus-imports ()
+  (interactive)
+  (setq starting-position (point-marker))
+  (let ((deletes (delete-bogus-imports-1)))
+    (cond ((> deletes 0)
+           (goto-char (point-min))
+           (or (re-search-forward import-line-regexp nil t)
+               (re-search-forward "^package" nil t))
+           (beginning-of-line))
+          (t
+           (message "No imports deleted")
+           (goto-char starting-position)))))
+
+
+(defun delete-bogus-imports-1 ()
+  (let ((current-pos 0)
+        (current-class "")
+        (last-import-pos 0)
+        (deletes 0)
+        (initialized nil))
+    (save-excursion
+      (end-of-buffer)
+      ;; Look for last import line in file
+      (cond ((re-search-backward import-line-regexp nil t)
+
+             ;; Remember where last import line is so we can search
+             ;; starting from that point for uses of a class
+             (end-of-line)
+             (setq last-import-pos (point-marker))
+             (goto-char last-import-pos)
+
+             ;; Loop through the import lines
+             (goto-char (point-min))
+             (while (re-search-forward import-line-regexp nil t)
+               (setq current-pos (point-marker))
+               (setq current-class (match-string 2))
+
+               ;; search for the package in the body of the file
+               (goto-char last-import-pos)
+               (let ((case-fold-search nil)
+                     (word-regexp (concat "\\b" (regexp-quote current-class)
+                                          "\\b")))
+                 (cond ((re-search-forward word-regexp nil t)
+                        ;; found -- do next
+                        (goto-char current-pos)
+                        )
+                       (t
+                        ;; not found, delete line into kill ring
+                        (goto-char current-pos)
+
+                        (cond ((not initialized)
+                               (setq initialized t)
+                               ;; Initialize kill ring
+                               (kill-region (point) (point))))
+
+                        (let ((kill-whole-line t))
+                          (setq deletes (+ deletes 1))
+                          (beginning-of-line)
+                          (append-next-kill)
+                          (kill-line))))))
+
+             ;; Sort import lines
+             (goto-char (point-min))
+             (cond ((re-search-forward import-line-regexp nil t)
+                    (beginning-of-line)
+                    (sort-lines nil (point) last-import-pos)
+                    (if remove-duplicate-imports
+                        (setq deletes (+ deletes
+                                         (delete-duplicates-in-region (point) last-import-pos t)))))))))
+    (sit-for 0)
+    (if (not (= deletes 0))
+        (message (concat (number-to-string deletes) " deleted imports in kill ring.")))
+    deletes))
+
+(defun delete-duplicates-in-region (start-position end-position append-lines-p)
+  (interactive (list (region-beginning) (region-end) nil))
+  (if (> start-position end-position)
+      (let ((temp start-position))
+        (setq start-position end-position)
+        (setq end-position temp)))
+  (save-excursion
+    (let ((current-position 0)
+          (prev-line "")
+          (current-line "")
+          (current-position 0)
+          (first-kill (not append-lines-p))
+          (deletes 0))
+
+      (goto-char end-position)
+      (beginning-of-line)
+      (setq prev-line (buffer-substring (point) end-position))
+
+      (forward-line -1)
+      (beginning-of-line)
+      (setq current-position (point-marker))
+      (catch 'bol
+        (while (>= current-position start-position)
+          (beginning-of-line)
+          (let ((bol (point-marker)))
+            (end-of-line)
+            (setq current-line (buffer-substring bol (point))))
+          (cond ((equal current-line prev-line)
+                 ;;(message (concat "delete " current-line)) (sit-for 1)
+                 (beginning-of-line)
+                 (if (and (not first-kill) (not (null kill-ring)))
+                     (append-next-kill))
+                 (let ((kill-whole-line t))
+                   (kill-line))
+                 (setq deletes (+ deletes 1))
+                 (setq first-kill nil)))
+          (if (< (forward-line -1) 0) (throw 'bol t))
+          (setq current-position (point-marker))
+          (setq prev-line current-line)))
+      deletes)))
 
 ;; Install and configure Company mode for completion
 (use-package company
-  :after lsp-mode
+;;  :after lsp-mode
   :config
   (global-company-mode 1)
-  (setq company-idle-delay 0.1          ; Delay before showing suggestions
+  (setq company-idle-delay 1          ; Delay before showing suggestions
         company-minimum-prefix-length 1  ; Show suggestions after typing one character
         company-selection-wrap-around t  ; Wrap around to top when reaching bottom of suggestions
         company-tooltip-align-annotations t ; Align annotations to the right
@@ -251,19 +665,5 @@
   :bind
   (:map company-active-map
         ("C-n" . company-select-next)
-        ("C-p" . company-select-previous)
-        ("M-n" . company-select-next)
-        ("M-p" . company-select-previous)))
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   '(magit bm monokai-theme kconfig-mode rjsx-mode web-mode flycheck-rust rustic deadgrep rg lsp-pyright python-mode typescript-mode xclip which-key company lsp-ui lsp-mode counsel ivy)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+        ("C-p" . company
+
